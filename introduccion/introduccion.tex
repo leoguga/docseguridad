@@ -1,0 +1,559 @@
+\emph{Nota del profesor:} este guión es únicamente
+  orientativo, y no se obliga a seguir este mismo orden y división en
+  secciones ni a utilizar \LaTeX. Sin embargo, se recomienda que el
+  formato usado, sea cual sea, contenga la información recogida en
+  este esquema. Es posible que no todo sea necesario, particularmente
+  en organizaciones de menor tamaño.
+
+  Se recomienda hacer referencia y seguir las recomendaciones de las
+  normas UNE-ISO/IEC 27002:2009 ~\cite{une27002}, UNE-ISO/IEC
+  27001~\cite{une27001} (disponible a través de NORWEB
+  en \url{biblioteca.uca.es}), UNE 71501~\cite{une71501} y el resto
+  del material del Campus Virtual. En particular, la norma UNE 71501-3
+  da ciertas guías sobre el contenido que debería tener una política
+  de seguridad de TI de una organización.
+
+\section{Descripción de la Organización}
+
+\begin{center}\begin{tiny}
+\textbf{Nombre de la organización, a qué se dedica, de qué activos (a alto
+nivel: locales, edificios, etc.) dispone, cuál es su organigrama, etc.}
+\end{tiny}
+\end{center}
+
+La organización para la que se diseña esta política de seguridad de denomina \laorganizacion
+
+\paragraph{}
+
+\laorganizacion \ se dedica a la producción y comercialización de vinos y brandis dentro de la zona de producción y crianza conocida como \emph{Marco de Jerez}. Para ello, utiliza los métodos tradicionales de producción del Marco, estando adherida a todos los estándares de calidad requeridos por el \emph{Consejo Regulador de la Denominación de Origen Jeréz-Xérès-Sherry}.
+
+\subsection{Estructura organizativa de la compañía}
+\label{sec:EstructuraOrganizativaDeLaCompañía}
+
+\subsubsection{Los Directorados}
+\label{sec:LosDirectorados}
+
+La organización de la empresa se sustenta en una estructura de directorados y departamentos. El Director General y el resto de los Directores constituyen el Comité de Dirección ejecutiva, que se reúne quincenalmente.
+
+\paragraph{}
+
+Los directorados son los siguientes:
+
+\begin{itemize}
+\item Dirección de Administración.
+\item Dirección Comercial.
+\item Dirección de Producción.
+\item Dirección de IM/IT.
+\item Dirección Financiera.
+
+
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.3cm,
+		text centered,anchor=north},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=3cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=5cm},
+    level 3/.style={sibling distance=6cm},
+    level 4/.style={sibling distance=6cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node [event] {Director general}
+child
+{
+	node {Director \\de Administración}
+}
+child
+{
+	node {Director Comercial}
+}
+child
+{
+	node {Director de Producción}
+}
+child
+{
+	node {Director de IM/IT}
+}
+child
+{
+	node {Director Financiero}
+};
+
+\end{tikzpicture}
+\end{center}
+
+\paragraph{}
+Las funciones de los directorados y sus departamentos, se detallan en los siguientes apartados.
+
+
+
+
+\subsubsection{Dirección de Administración}
+\label{sec:DirecciónDeAdministración}
+
+La dirección de administración se ocupa de los asuntos relativos al personal de la empresa, y a la logística de compras y mantenimiento de las instalaciones.
+
+\paragraph{}
+Se divide en dos departamentos: \emph{Personal} y \emph{Logística}.
+
+\paragraph{}
+El \emph{departamento de personal} tiene un jefe y varios administrativos, que se encargan de las siguientes funciones:
+
+\begin{itemize}
+	\item Realización de las nóminas.
+	\item Ejecución de los procesos de contratación y despidos.
+	\item Ejecución de los procesos disciplinarios.
+	\item Coordinación de las políticas de ascensos.
+\end{itemize}
+
+
+El \emph{departamento de logística} tiene un jefe,varios administrativos, y un inspector de mantenimiento, que se encargan de la ejecución de los procedimientos de adquisición de materiales y servicios necesarios para el funcionamiento de la empresa, función que incluye:
+\begin{itemize}
+	\item Búsqueda del precio más ventajoso y negociación con proveedores.
+	\item Control de los plazos de terminación y renovación de contratos de servicios y obras.
+	\item Inspección para asegurarse que los servicios y materiales adquiridos cumplen las condiciones estipuladas en los contratos.
+	\item Revisión de facturas recibidas, y envío a Comptroller para su pago, si procede.
+\end{itemize}
+
+ 
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.6cm,
+		text centered,anchor=north,},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=6cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=5cm},
+    level 3/.style={sibling distance=6cm},
+    level 4/.style={sibling distance=3cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node  [event] {Director \\de Administración}
+child
+{
+	node  {Jefe Depto. de Personal}
+	child
+	{
+		node {Administrativos de Personal}
+	}
+}
+child
+{
+	node  {Jefe Dpto. de Logística}
+	child
+	{
+		node {Administrativos de Logística}	
+	}
+	child
+	{
+		node {Inspector de Mantenimiento}	
+	}
+};
+
+\end{tikzpicture}
+\end{center}
+
+
+\subsubsection{Dirección Comercial}
+La Dirección Comercial es responsable de planear y ejecutar la estrategia de ventas de la empresa. La encabeza el Director comercial, y tiene tres departamentos: el Departamento de Ventas, el departamento de Márketing, y el almacén de productos terminados.
+
+\begin{itemize}
+	\item El \textbf{departamento de ventas} se encarga de la captación de clientes y pedidos de ventas. Se trata de un equipo de vendedores y administrativos. Las exportaciones son manejadas por una empresa intermediaria, por lo que esta compañía no tiene relaciones con el extranjero. Los clientes de la compañía son de los siguientes tipos:
+	\begin{itemize}
+	 	\item Establecimientos de hostelería
+	 	\item Tiendas al por menor.
+	 	\item Grandes superficies.
+	 	\item Compañías distribuidoreas de alimentación.
+	 	\item Personas particulares.
+	\end{itemize}
+	\item El \textbf{departamento de márketing} se encarga del diseño e ejecución de las campañas publicitarias, y trabaja en coordinación con el departamento de ventas y el financiero para el diseño de ofertas y promociones. También se encarga de asistir en la búsqueda de formas innovadoras de presentación y composición de los productos, en coordinación con la Dirección de Producción.
+	\item El \textbf{almacén de productos terminados} dispone de un gran almacén donde están disponibles los productos antes de su salida vía pedidos, y tiene encomendadas las siguientes funciones:
+		\begin{itemize}
+	 	\item Almacenamiento y control del stock de productos terminados.
+	 	\item Preparación y despacho de pedidos. La compañía no tiene flota de transporte propia.
+	\end{itemize}
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.6cm,
+		text centered,anchor=north},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=3.5cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=3.3cm},
+    level 3/.style={sibling distance=6cm},
+    level 4/.style={sibling distance=3cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node [event] {Director Comercial}
+child
+{
+	node {Jefe Dpto. de Ventas}
+	child
+	{
+		node {Administrativos de Ventas}
+	}
+	child
+	{
+		node {Comerciales de Ventas}
+	}
+}
+child
+{
+	node {Jefe Dpto. de Márketing}
+	child [level distance = 4cm]
+	{
+		node {Comerciales de \\Márketing}
+	}
+}
+child
+{
+	node {Jefe Almacén \\Productos Terminados}
+	child
+	{
+		node {Operarios}
+	}
+	child
+	{
+		node {Personal administrativo}
+	}
+};
+
+\end{tikzpicture}
+\end{center}
+
+
+\subsubsection{Dirección de Producción}
+La dirección de producción se encarga de la fabricación de los productos que la compañía tiene a la venta, siguiendo los procedmimentos establecidos por los comités técnicos, y cumpliendo con la normativa vigente de salud pública y protección al consumidor. 
+
+Este directorado tiene tres departamentos: Control de Calidad, Viñas, Planta de Molturación y Mostos, Envejecimiento, y Embotellado. 
+
+\begin{itemize}
+	\item El \textbf{Departamento de Control de Calidad} se encarga de la realización de las pruebas y cálculos pertinentes para asegurarse de que los productos terminados e intermedios que se están fabricando se realizan según los procedimientos estipulados, de que sus propiedades cumplen los niveles de calidad acordes a su categoría. Lo componen un Jefe de Control de Calidad, y varios técnicos de laboratorio.
+  \item El \textbf{Departamento de Viñas} se encarga de la relación con las fincas productoras de uva que pretenden vender o ya han vendido su producción a la bodega. Estas viñas autorizan a los \emph{inspectores de calidad} de viñas a realizar visitas periódicas a las viñas para asegurarse que la producción contratada va a estar disponible y con unos niveles de calidad determinados en el momento de la vendimia. El \emph{coordinador de producción} se encarga de informar al Jefe de Viñas de cualquier desviación en el volúmen de producción de uva esperado, así como estar enterado de las fluctuaciones de los precios de la uva.
+
+
+	\item En la \textbf{planta de mostos y holandas} se realiza la recepción de la uva, su prensado para la extracción del zumo de la uva y su fermentación para la consecución del vino jóven o mosto. En esta planta también se realiza la destilación del alcohol para la elaboración el brandy a partir del mosto. A este alcohol obtenido se denomina la "`holanda"'. Consta de un jefe de planta y varios operarios y mecánicos.
+	
+	\item La etapa de envejecimiento está controlada por el \textbf{Jefe de Bodega}. Los mostos y holandas se introducen en barriles para su envejecimiento. Esta etapa sigue unos procesos de mezclas y reposos realizados pos los operarios de las bodegas, de cuyas actividades informan a los capataces en forma de pequeños documentos llamados "`estadillos"'.
+	
+	\item Por fin, la \textbf{planta de embotellamiento} realiza el embotellado de los productos envejecidos, según las indicaciones del director de producción. Los productos terminados se encaminan al almacén de productos terminados.
+
+\end{itemize}
+	
+	
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.3cm,
+		text centered,anchor=north},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=5cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=2.7cm},
+    level 3/.style={sibling distance=2.7cm},
+    level 4/.style={sibling distance=2.7cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node [event] {Director de producción (1/2)}
+child
+{
+	node {Jefe de Dpto. Control de Calidad}
+	child
+	{
+		node {Técnicos de \\Laboratorio}
+	}
+}
+child
+{
+	node {Jefe Dpto. Viñas}
+	child 
+	{
+		node {Inspectores de calidad}
+	}
+	child 
+	{
+		node {Coordinador de producción}
+	}
+};
+
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.3cm,
+		text centered,anchor=north},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=4.3cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=2.7cm},
+    level 3/.style={sibling distance=2.7cm},
+    level 4/.style={sibling distance=2.7cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node [event] {Director de producción (2/2)}
+child
+{
+	node  {Jefe de Mostos y Holandas}
+	child
+	{
+		node  {Mecánicos}
+	}
+	child
+	{
+		node  {Operarios}
+	}
+}
+child [level distance=3cm]
+{
+	node   {Jefe de Planta de Embotellado}
+	child [level distance=1.4cm]
+	{
+		node {Operarios}
+	}
+	child [level distance=1.4cm] 
+	{
+		node  {Mecánicos}
+	}
+}
+child
+{
+	node [text width=2.6cm]  {Jefe de Bodegas}
+	child
+	{
+		node {Capataces de bodega}
+		child
+		{
+			node [text width=2.6cm] {Operarios de Bodega}
+		}
+	}
+};
+\end{tikzpicture}
+\end{center}
+
+\subsubsection{Dirección de IM/IT}
+Esta compañía le da mucha importancia estratégica al flujo de datos e información de la empresa, y ha decidido que el área de IM/IT va a tener un directorado.
+
+Este directorado consta de dos depatamentos: IT (Information Technology) e IM (Informacion Management).
+
+\begin{itemize}
+	\item El departamento de IT está compuesto de un administrador de redes, un administrador de servidores de aplicaciones y datos, dos técnicos de mantenimiento de equipos, y un especialista en seguridad informática. Las funciones de este departamento son:
+	\begin{itemize} 
+	\item Instalación, mantenimiento y administración de la infraestructura de red, servidores y comunicaciones de la organización.
+	\item Instalación, mantenimiento y administración de dispositivos finales (Computadoras, teléfonos móviles, etc.), y su correcta configuración según los servicios requeridos para el tipo de usuario.
+	\item Contratación de servicios externos para la instalación de infraestructura llegado el caso.
+	\item Inspección continua de seguridad de la infraestructura de sistemas de información de la empresa.
+	\end{itemize}
+	\item El departamento de IM está compuesto por un Jefe de IM, y dos programadores, que cumplen las siguientes funciones:
+	
+	\begin{itemize}
+	\item Análisis continuado de los procesos de negocio de la empresa, y búsqueda de las herramientas de información adecuadas para la mejora continua de dichos procesos.
+	\item Recolección de los datos necesarios para la correcta valoración de las métricas diseñadas por el comité ejecutivo de dirección y el plan estratégico de la compañía, y mantenimiento del  "`Cuadro de Mandos"' o "`Dashboard"' que contienen dichas métricas.
+	\item Realización de informes más detallados sobre estos datos recolectados para ayudar a que los mandos de la compañía puedan realizar una supervisión más efectiva.
+	\item Diseño de software, en el caso de que las necesidades específicas de la compañía no pueden ser cubiertas por productos comerciales. 
+	\end{itemize}	
+	
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.3cm,
+		text centered,anchor=north},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=6cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=3cm},
+    level 3/.style={sibling distance=3cm},
+    level 4/.style={sibling distance=3cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node (g1) [event] {Director de IM/IT}
+child
+{
+	node (g2) {Jefe de IT}
+	child
+	{
+		node (g3) {Administrador de la red}	
+	}
+	child
+	{
+			node (g4) {Administrador de servidores de datos y aplicaciones}
+	}
+	child
+	{
+			node (t1) {Técnicos de mantenimiento de equipos}
+	}
+	child
+	{
+		node (t2) {Especialista en seguridad}
+	}
+}
+child [level distance=4.5cm]
+{
+	node (g5) {Jefe de IM}
+	child [level distance=1.4cm]
+	{
+		node (t3) {Programadores}
+	}
+};
+
+\end{tikzpicture}
+\end{center}
+
+\subsubsection{Dirección Financiera}
+El \textbf{Director Financiero} es responsable de las siguientes funciones:
+\begin{itemize}
+\item Mantener fielmente y actualizada la información relativa al estado financiero de la empresa.
+\item Realizar las operaciones necesarias para el cumplimento de las normas en relación con las Haciendas locales y estatales. 
+\item Realizar análisis de costes y beneficios que ayuden al resto de los Directores a realizar un mejor planeamiento de sus operaciones.
+\item Avisar a la Dirección de la Empresa de las desviaciones sobre presupuestos financieros y/o de gastos, que pudieran alterar la consecución de objetivos estratégicos de la compañía.
+\end{itemize}
+
+Para ello, el directorado se divide en dos departamentos: uno de \textbf{contabilidad}, y otro de \textbf{Comptroller}.
+
+\begin{itemize}
+\item El \emph{departamento de contabilidad} se ocupa de la correcta contabilización de los documentos contables de la empresa, de su custodia según lo estipula la ley, y del cumplimiento de las obligaciones con las haciendas locales y estatales,y del análisis de costes.
+\item El comptroller se ocupa del análisis del flujo de pagos y cobros, y de que el destino de los recursos de la empresa no se desvíe de la función para la que fueron presupuestados. 
+\end{itemize}
+
+  
+\begin{center}
+\begin{tikzpicture}[
+% Label style
+    label distance=3mm,
+    every label/.style={blue},
+% Event style
+    event/.style={rectangle,thick,draw,fill=yellow!20,text width=2.3cm,
+		text centered,anchor=north},
+% Children and edges style
+    edge from parent/.style={very thick,draw=black!70},
+    edge from parent path={(\tikzparentnode.south) -- ++(0,-1.05cm)
+			-| (\tikzchildnode.north)},
+    level 1/.style={sibling distance=5cm,level distance=1.4cm,
+			growth parent anchor=south,nodes=event},
+    level 2/.style={sibling distance=2.7cm},
+    level 3/.style={sibling distance=2.7cm},
+    level 4/.style={sibling distance=2.7cm}
+%%  For compatability with PGF CVS add the absolute option:
+%   absolute
+    ]
+%% Draw events and edges
+
+\node [event] {Director Financiero}
+child
+{
+	node {Jefe de Dpto. de Contabilidad}
+	child
+	{
+		node {Contables}
+	}
+}
+child
+{
+	node {Comptroller}
+	child 
+	{
+		node {Contables de Cobros y Pagos}
+	}
+};
+
+\end{tikzpicture}
+\end{center}
+
+\section{Objetivos y alcance de la política}
+
+Aquí se indica qué nivel de seguridad se desea obtener, y se
+relacionan con los objetivos de la organización. Hay que además
+limitar el alcance de la polática, para evitar cubrir demasiado
+terreno, que puede exigir demasiado tiempo.
+
+\section{Gestión y cambios de la política}
+Una política de seguridad no es algo estático, sino que se va
+revisando continuamente. Habrá que describir la forma en que se
+recogen las propuestas de cambio, se realizan los cambios pertinentes
+y se difunde de nuevo al resto del personal la última versión de la
+política, de forma clara e inequívoca.
+
+
+
+\section{Organización de la Seguridad}
+
+En esta sección se describe cómo se va a organizar la gestión de la
+seguridad en la organización a lo largo de todo su
+organigrama. Deberáa tenerse en cuenta a todos los departamentos, y no
+sólo al de Informática.
+
+Hay que definir responsabilidades y gestión de los informes de las
+incidencias. También se deberáan definir a alto nivel los mecanismos
+que se usarían para comprobar que se llevan a cabo las medidas
+indicadas en este documento.
+
+En este apartado se deberáan tener en cuenta las medidas explicadas en
+<<Seguridad en el entorno>> para limitar el riesgo por ataques
+internos, tomando en cuenta la matriz de peligrosidad mostrada en las
+transparencias.

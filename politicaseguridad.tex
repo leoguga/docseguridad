@@ -1,0 +1,133 @@
+\documentclass[a4paper,fontsize=11pt,bibliography=totoc]{scrbook}
+
+% Codificación
+\usepackage[spanish]{babel}
+\usepackage[cp1252]{inputenc}
+\usepackage{tikz}
+
+\usetikzlibrary{trees,positioning,arrows}
+
+% Fuentes
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{chapterfolder}
+
+\usepackage{chapterfolder}
+
+% Formato de página
+\usepackage[ilines]{scrpage2}
+
+% Otros paquetes
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xspace}
+\usepackage{varioref}
+\usepackage{microtype}
+
+% hyperref casi siempre es mejor cargarlo al final
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+
+\setheadsepline{.4pt}
+
+\newcommand{\laorganizacion}{Bodegas San Dionisio, S.A.}
+
+\subject{Universidad de Cádiz \\ Seguridad y Competencias Profesionales \\ Curso 2009/2010}
+\title{Política de Seguridad de Tecnologías de la Información de  \laorganizacion}
+\author{Leopoldo Jesús Gutiérrez Galeano\\Lidia Lebrón Amaya\\Luis Nadal de Mora\\Rafael Sánchez Martínez\\Jesús Soriano Candón}
+\date{\today}
+
+\makeatletter
+\hypersetup{
+  pdftitle={Política de seguridad de \laorganizacion},
+  pdfsubject={Seguridad y Competencias Profesionales 09/10},
+  pdfauthor={Leopoldo Jesús Gutiérrez Galeano,Lidia Lebrón Amaya,Luis Nadal de Mora,Rafael Sánchez Martínez,Jesús Soriano Candón},
+  pdfkeywords={seguridad, política, tecnologías, información, informática}
+}
+\makeatother
+
+\newcommand{\cellcenter}[1]{\multicolumn{1}{c}{#1}}
+\newcommand{\thead}[1]{\textbf{\emph{#1}}}
+\newcommand{\espaciocambios}{\rule{0cm}{1.5cm}\xspace}
+\setlength{\extrarowheight}{4pt}
+
+
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+  \maketitle
+\end{titlepage}
+
+\frontmatter
+\pagestyle{empty}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Historial de Cambios}
+
+\begin{center}
+  \centering
+  \begin{tabular}{|m{.3\textwidth}|m{.65\textwidth}|}
+    \cellcenter{\thead{Fecha}} & \cellcenter{\thead{Cambios}} \\
+    \hline
+    \today & Primera versión del documento. \\ \hline
+    &  \\ \hline
+    &  \\ \hline
+    &  \\ \hline
+    &  \\ \hline
+  \end{tabular}
+\end{center}
+
+\cfchapter{Compromiso de la dirección}{compromisodireccion}{compromisodireccion}
+
+\mainmatter
+\pagestyle{scrheadings}
+
+\cfchapter{Introducción}{introduccion}{introduccion}
+
+
+\cfchapter{Política de seguridad de la información}{seguridadinformacion}{seguridadinformacion}
+
+
+\cfchapter{Política de seguridad física}{seguridadfisica}{seguridadfisica}
+
+
+\cfchapter{Política de control del personal}{controlpersonal}{controlpersonal}
+
+
+\cfchapter{Política de seguridad en software y hardware}{seguridadsofthard}{seguridadsofthard}
+
+
+\cfchapter{Política de seguridad de las comunicaciones}{seguridadcomunicaciones}{seguridadcomunicaciones}
+
+
+\cfchapter{Política de continuidad del negocio}{continuidadnegocio}{continuidadnegocio}
+
+\appendix
+
+\cfchapter{Presupuestos de material}{presupuestomaterial}{presupuestomaterial}
+
+\chapter{Otros anexos}
+
+Se dedicarán más anexos para aquellas listas y materiales que por su
+extensión rompan el flujo normal del texto de una determinada
+política, o que se consideren que pueden cambiar con más frecuencia.
+
+Posibles anexos incluyen:
+
+\begin{itemize}
+\item Formularios a utilizar para gestionar las incidencias
+\item Normativa y legislación aplicable
+\item Procedimientos del responsable de seguridad y/o el comité de seguridad
+\end{itemize}
+
+%%
+
+\backmatter
+\bibliographystyle{IEEEtran}
+\bibliography{politicaseguridad}
+
+\end{document}
