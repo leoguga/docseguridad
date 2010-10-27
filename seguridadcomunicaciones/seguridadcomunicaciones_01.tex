@@ -1,0 +1,50 @@
+\label{ch:comunicaciones}
+Esta sección se dedicará a describir cómo se protegerán las conexiones
+internas y externas, los datos que recorran la red interna de la
+organización, y cómo se evitarán las fugas de información hacia el
+exterior.
+
+\section{Infraestructura y topología de la red}
+
+Hay que describir la red existente a alto nivel, con el equipamiento
+utilizado. Como mínimo debe describirse la topología a alto nivel, con
+sus enrutadores, conmutadores y estaciones de trabajo. Normalmente se
+seguirá un cableado estructurado, si la organización es lo
+suficientemente grande.
+
+\paragraf()
+La disposición de los distintos elementos que contendrán los armarios de comunicaciones,
+Racks, se ubicarán de la sigueinte manera(ver figura 1):
+\begin{itemize}
+	\item La unidad de alimentación interrumpida (SAI) irá en la parte más baja del Rack.
+	\item Si hiciera falta colocar una bandeja para colocar trasnformadores, inyectores de
+	Access Point, Trasceiver, etc... esta debe de ir inmediatamente encima de la SAI
+	\item La elecrónica de red (switch, router, etc...) irá situada encima de la bandeja para
+	tranasformadores si la hubiera, y en caso contrario seguira a la SAI, dejando un espacio de 2 unidades.
+	Entre cada dos elementeos (switch-switch ó switch-router) ha de ir un pasahilo.
+	Los switch se irán numerando de abajo arriba
+	\item En la parte superior del Rack, en la primera Unidad, se colocara una bandeja-panel para F.O.
+	\item Al panel de F.O., separado por su correspondiente pasahilos y dejando 2 Unidades libres, le seguiran los paneles telefónicos, esto han se der regleteros 110. Los regleeros 110 han de ir separados por un pasahilo. Se enumeraran de arriba abajo
+	\item A continuación de los paneles telefónico, dejando al menos 1 Unidad libre, se colocaran los paneles RJ45, categoría 5e ó superior. Cada panel RJ irá encapsulado por arriba y por abajo de sus correspondienes pasahilos. Estos paneles se enumeraran de arriba abajo
+\end{itemize}
+
+
+\section{Seguridad de las conexiones al exterior}
+
+Se describirán las conexiones al exterior (internet, PBX) y cómo se
+protegerán ante accesos no autorizados. Si se estima necesario, pueden
+tomarse medidas para asegurar la disponibilidad de la conexión
+(enlaces redundantes, por ejemplo).
+
+Normalmente habrá que establecer un perímetro de seguridad para
+proteger la red de la organización de las amenazas exteriores.
+
+\section{Seguridad de la información transmitida}
+
+Medidas para evitar que la información transmitida sea bloqueada,
+interceptada, modificada o falsamente fabricada.
+
+\section{Seguridad en el teletrabajo}
+
+Si en la organización se permite el teletrabajo, habrá que tomar las
+medidas necesarias para que esto no suponga una amenaza de seguridad.
