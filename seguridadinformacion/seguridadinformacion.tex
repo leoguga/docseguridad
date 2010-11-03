@@ -17,15 +17,174 @@ capítulos dedicados a la seguridad de las comunicaciones
 
 \section{Información recogida}
 
-Descripción a alto nivel de la información que utiliza la organización
-para llevar a cabo sus fines.
+%Descripción a alto nivel de la información que utiliza la organización
+%para llevar a cabo sus fines.
+
+\begin{itemize}
+\item \textbf{Fichero de personal:} en este fichero se guarda información 
+sobre los datos personales del personal de la empresa, así como los datos 
+correspondientes a las nóminas.
+
+\item \textbf{Fichero de proveedores:} se guardan los datos de los proveedores, 
+la información sobre la logística de la empresa y las facturas de las materias 
+primas adquiridas y de su transporte, así como los albaranes.
+
+\item \textbf{Fichero de clientes:} contiene los datos de los clientes, la 
+gestión de pedidos, información sobre las ventas, la facturación y los albaranes 
+correspondientes al transporte de mercancías.
+
+\item \textbf{Fichero financiero:} incluyen la información sobre los cobros, 
+pagos, la contabilidad de la empresa, información sobre el IVA y los balances contables.
+
+\item \textbf{Fichero de producción:} aquí se guarda toda la información sobre la 
+producción de la empresa y sobre las inspecciones de calidad.
+
+\item \textbf{Fichero de informes:} principalmente se guardan los informes de dirección, 
+que se pueden acabar representando como dashboards, etc.
+\end{itemize}
 
 \section{Análisis de riesgos y sensibilidad}
 
+%Aquí se hará un estudio de lo delicada que es la información tratada,
+%y de a qué riesgos se halla sometida, de acuerdo con las tres bases de
+%la seguridad (confidencialidad, integridad y disponibilidad).
 
-Aquí se haráa un estudio de lo delicada que es la información tratada,
-y de a qué riesgos se halla sometida, de acuerdo con las tres bases de
-la seguridad (confidencialidad, integridad y disponibilidad).
+\subsection{Codificación de amenazas}
+
+\subsubsection{Errores generales}
+
+%\begin{table}[h!]
+%\begin{center}
+   \begin{tabular}{ | l | l |}
+    \hline
+    Código & Descripción \\ \hline
+    ERG01 & Error de configuración \\ \hline
+    ERG02 & Error de software \\ \hline
+    ERG03 & Error de seguridad \\ \hline
+    ERG04 & Error en las actualizaciones \\ \hline
+    ERG05 & Error en la red interna \\ \hline
+    ERG06 & Error general en la red \\ \hline
+    ERG07 &  \\ \hline
+    ERG08 &  \\ \hline
+    ERG09 &  \\ \hline
+    ERG10 &  \\ \hline
+    \end{tabular}
+%\end{center}
+%\end{table}
+
+
+
+\subsubsection{Ataques no intencionados}
+
+%\begin{table}[h!]
+%\begin{center}
+   \begin{tabular}{ | l | l |}
+    \hline
+    Código & Descripción \\ \hline
+    ATN01 & Eliminación o pérdida de información \\ \hline
+    ATN02 & Modificación de información \\ \hline
+    ATN03 & Difusión pública de información \\ \hline
+    ATN04 & Difusión o pérdida de credenciales \\ \hline
+    ATN05 & Bloqueo o cierre de sesión no efectuado \\ \hline
+    ATN06 & Acceso externo no autorizado \\ \hline
+    ATN07 &  \\ \hline
+    ATN08 &  \\ \hline
+    ATN09 &  \\ \hline
+    ATN10 &  \\ \hline
+    \end{tabular}
+%\end{center}
+%\end{table}
+
+
+
+\subsubsection{Amenazas físicas no intencionados}
+
+%\begin{table}[h!]
+%\begin{center}
+   \begin{tabular}{ | l | l |}
+    \hline
+    Código & Descripción \\ \hline
+    AMN01 & Volcado de líquidos sobre el equipo \\ \hline
+    AMN02 & Tropiezos por la situación de los aparatos y cables \\ \hline
+    AMN03 & Mantenimiento del edificio: pintura, limpieza, etc. \\ \hline
+    AMN04 & Caídas o vuelques durante el transporte \\ \hline
+    AMN05 &  \\ \hline
+    AMN06 &  \\ \hline
+    AMN07 &  \\ \hline
+    AMN08 &  \\ \hline
+    AMN09 &  \\ \hline
+    AMN10 &  \\ \hline
+    \end{tabular}
+%\end{center}
+%\end{table}
+
+
+\subsubsection{Ataques intencionados}
+
+%\begin{table}[h!]
+%\begin{center}
+   \begin{tabular}{ | l | l |}
+    \hline
+    Código & Descripción \\ \hline
+    ATI01 & Robo \\ \hline
+    ATI02 & Interceptación de datos por medios físicos \\ \hline
+    ATI03 & Sabotaje \\ \hline
+    ATI04 & Vandalismo \\ \hline
+    ATI05 &  \\ \hline
+    ATI06 &  \\ \hline
+    ATI07 &  \\ \hline
+    ATI08 &  \\ \hline
+    ATI09 &  \\ \hline
+    ATI10 &  \\ \hline
+    \end{tabular}
+%\end{center}
+%\end{table}
+
+
+
+\subsubsection{Amenazas físicas no intencionadas}
+
+%\begin{table}[h!]
+%\begin{center}
+   \begin{tabular}{ | l | l |}
+    \hline
+    Código & Descripción \\ \hline
+    AFN01 & Incendio \\ \hline
+    AFN02 & Inundación \\ \hline
+    AFN03 & Inestanqueidad \\ \hline
+    AFN04 & Derrumbe \\ \hline
+    AFN05 & Terremoto \\ \hline
+    AFN06 &  \\ \hline
+    AFN07 &  \\ \hline
+    AFN08 &  \\ \hline
+    AFN09 &  \\ \hline
+    AFN10 &  \\ \hline
+    \end{tabular}
+%\end{center}
+%\end{table}
+
+
+
+\subsubsection{Amenazas físicas intencionadas}
+
+%\begin{table}[h!]
+%\begin{center}
+   \begin{tabular}{ | l | l |}
+    \hline
+    Código & Descripción \\ \hline
+    AFI01 & Incendio \\ \hline
+    AFI02 & Inundación \\ \hline
+    AFI03 & Avería física \\ \hline
+    AFI04 & Destrucción física \\ \hline
+    AFI05 & Corte del servicio eléctrico \\ \hline
+    AFI06 & Corte del servicio telefónico \\ \hline
+    AFI07 & Corte del proveedor de servicios de red \\ \hline
+    AFI08 & Ataque terrorista \\ \hline
+    AFI09 &  \\ \hline
+    AFI10 &  \\ \hline
+    \end{tabular}
+%\end{center}
+%\end{table}
 
 \section{Conformidad con la legislación vigente}
 
