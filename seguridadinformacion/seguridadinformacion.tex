@@ -20,6 +20,8 @@ capítulos dedicados a la seguridad de las comunicaciones
 %Descripción a alto nivel de la información que utiliza la organización
 %para llevar a cabo sus fines.
 
+En este punto se describe con qué tipo de información trabaja Bodegas San Dionisio S.A.. En esta empresa, se divide la información en seis ficheros claramente diferenciados, conteniendo cada uno de ellos información de distinto tipo, con los que normalmente trabajan distintos tipos de empleados de la empresa. Los ficheros de la empresa son los siguientes:
+
 \begin{itemize}
 \item \textbf{Fichero de personal:} en este fichero se guarda información 
 sobre los datos personales del personal de la empresa, así como los datos 
@@ -37,10 +39,12 @@ correspondientes al transporte de mercancías.
 pagos, la contabilidad de la empresa, información sobre el IVA y los balances contables.
 
 \item \textbf{Fichero de producción:} aquí se guarda toda la información sobre la 
-producción de la empresa y sobre las inspecciones de calidad.
+producción de la empresa y sobre las inspecciones de calidad. Estos datos se encuentran
+en un disco duro compartido, contenidos en hojas de cálculo de Excel, al que solo van a tener acceso las personas implicadas en su realización y lectura.
 
 \item \textbf{Fichero de informes:} principalmente se guardan los informes de dirección, 
-que se pueden acabar representando como dashboards, etc.
+que se pueden acabar representando como dashboards, etc. Estos informes y los dashboards se encuentran en unas hojas de Excel, dentro de un disco duro compartido, al que solo van a tener acceso las personas implicadas en su realización y lectura.
+
 \end{itemize}
 
 \section{Análisis de riesgos y sensibilidad}
@@ -49,7 +53,22 @@ que se pueden acabar representando como dashboards, etc.
 %y de a qué riesgos se halla sometida, de acuerdo con las tres bases de
 %la seguridad (confidencialidad, integridad y disponibilidad).
 
+En este punto, inicialmente se clasifican los tipos de amenazas a las que puede ser vulnerable la empresa, describiendo a continuación los riesgos a los que se halla sometida la información con la que se trabaja en Bodegas San Dionisio S.A..
+
 \subsection{Codificación de amenazas}
+
+Las posibles amenazas que se pueden llegar a dar, se han clasificado en una serie de tablas según el tipo al que puede pertenecer cada una de ellas. Además, se le ha asignado a cada amenaza un código único que facilita el tipo al que pertenece, evitando redundancia entre distintas amenazas o entre distintos tipos de amenazas.
+
+En la siguiente enumeración se pueden ver los distintos tipos de amenazas existentes y seguidamente las amenazas se clasifican siguiendo el esquema detallado a continuación:
+
+\begin{itemize}
+	\item Errores generales.
+	\item Ataques no intencionados.
+	\item Ataques físicos no intencionados.
+	\item Ataques intencionados.
+	\item Amenazas físicas no intencionadas.
+	\item Amenazas físicas intencionadas.
+\end{itemize}
 
 \subsubsection{Errores generales}
 
@@ -97,7 +116,7 @@ que se pueden acabar representando como dashboards, etc.
 
 
 
-\subsubsection{Amenazas físicas no intencionados}
+\subsubsection{Ataques físicos no intencionados}
 
 %\begin{table}[h!]
 %\begin{center}
@@ -185,6 +204,25 @@ que se pueden acabar representando como dashboards, etc.
     \end{tabular}
 %\end{center}
 %\end{table}
+
+
+
+\subsection{Personal autorizado en los ficheros}
+
+En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de personal está autorizado para la lectura, realización o modificación de dichos ficheros:
+
+\begin{tabular}{ | l | l | l | l |}
+ \hline
+ Nombre / Personal autorizado & Básico & Agregado & Privilegiado \\ \hline
+ Fichero de personal &  &  &  \\ \hline
+ Fichero de proveedores &  &  &  \\ \hline
+ Fichero de clientes &  &  &  \\ \hline
+ Fichero financiero &  &  &  \\ \hline
+ Fichero de producción &  &  &  \\ \hline
+ Fichero de informes &  &  &  \\ \hline
+\end{tabular}
+
+
 
 \section{Conformidad con la legislación vigente}
 
