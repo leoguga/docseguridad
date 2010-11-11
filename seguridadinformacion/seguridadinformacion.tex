@@ -1,19 +1,19 @@
 \label{ch:informacion}
-Este capítulo puede dedicarse a los riesgos que afectan a la
-información almacenada y obtenida en la organización. Para ello, habrá
-que describir qué información a nivel abstracto trata la organización
-y cuál es su nivel de sensibilidad.
+%Este capítulo puede dedicarse a los riesgos que afectan a la
+%información almacenada y obtenida en la organización. Para ello, habrá
+%que describir qué información a nivel abstracto trata la organización
+%y cuál es su nivel de sensibilidad.
 
-Habrá que relacionarla con la Ley Orgánica de Protección de Datos,
-aunque los documentos de seguridad para la LOPD tendrán que elaborarse
-por separado de este trabajo. Para los documentos de seguridad se
-pueden seguir los modelos disponibles en el Campus Virtual.
+%Habrá que relacionarla con la Ley Orgánica de Protección de Datos,
+%aunque los documentos de seguridad para la LOPD tendrán que elaborarse
+%por separado de este trabajo. Para los documentos de seguridad se
+%pueden seguir los modelos disponibles en el Campus Virtual.
 
-Este capítulo hará referencia a las medidas implantadas en otros
-capítulos dedicados a la seguridad de las comunicaciones
-(capítulo~\vref{ch:comunicaciones}), del software y hardware
-(capítulo~\vref{ch:swhw}) y de la seguridad física
-(capítulo~\vref{ch:fisica}), entre otros.
+%Este capítulo hará referencia a las medidas implantadas en otros
+%capítulos dedicados a la seguridad de las comunicaciones
+%(capítulo~\vref{ch:comunicaciones}), del software y hardware
+%(capítulo~\vref{ch:swhw}) y de la seguridad física
+%(capítulo~\vref{ch:fisica}), entre otros.
 
 \section{Información recogida}
 
@@ -47,166 +47,6 @@ que se pueden acabar representando como dashboards, etc. Estos informes y los da
 
 \end{itemize}
 
-\section{Análisis de riesgos y sensibilidad}
-
-%Aquí se hará un estudio de lo delicada que es la información tratada,
-%y de a qué riesgos se halla sometida, de acuerdo con las tres bases de
-%la seguridad (confidencialidad, integridad y disponibilidad).
-
-En este punto, inicialmente se clasifican los tipos de amenazas a las que puede ser vulnerable la empresa, describiendo a continuación los riesgos a los que se halla sometida la información con la que se trabaja en Bodegas San Dionisio S.A..
-
-\subsection{Codificación de amenazas}
-
-Las posibles amenazas que se pueden llegar a dar, se han clasificado en una serie de tablas según el tipo al que puede pertenecer cada una de ellas. Además, se le ha asignado a cada amenaza un código único que facilita el tipo al que pertenece, evitando redundancia entre distintas amenazas o entre distintos tipos de amenazas.
-
-En la siguiente enumeración se pueden ver los distintos tipos de amenazas existentes y seguidamente las amenazas se clasifican siguiendo el esquema detallado a continuación:
-
-\begin{itemize}
-	\item Errores generales.
-	\item Ataques no intencionados.
-	\item Ataques físicos no intencionados.
-	\item Ataques intencionados.
-	\item Amenazas físicas no intencionadas.
-	\item Amenazas físicas intencionadas.
-\end{itemize}
-
-\subsubsection{Errores generales}
-
-%\begin{table}[h!]
-%\begin{center}
-   \begin{tabular}{ | l | l |}
-    \hline
-    Código & Descripción \\ \hline
-    ERG01 & Error de configuración \\ \hline
-    ERG02 & Error de software \\ \hline
-    ERG03 & Error de seguridad \\ \hline
-    ERG04 & Error en las actualizaciones \\ \hline
-    ERG05 & Error en la red interna \\ \hline
-    ERG06 & Error general en la red \\ \hline
-    ERG07 &  \\ \hline
-    ERG08 &  \\ \hline
-    ERG09 &  \\ \hline
-    ERG10 &  \\ \hline
-    \end{tabular}
-%\end{center}
-%\end{table}
-
-
-
-\subsubsection{Ataques no intencionados}
-
-%\begin{table}[h!]
-%\begin{center}
-   \begin{tabular}{ | l | l |}
-    \hline
-    Código & Descripción \\ \hline
-    ATN01 & Eliminación o pérdida de información \\ \hline
-    ATN02 & Modificación de información \\ \hline
-    ATN03 & Difusión pública de información \\ \hline
-    ATN04 & Difusión o pérdida de credenciales \\ \hline
-    ATN05 & Bloqueo o cierre de sesión no efectuado \\ \hline
-    ATN06 & Acceso externo no autorizado \\ \hline
-    ATN07 &  \\ \hline
-    ATN08 &  \\ \hline
-    ATN09 &  \\ \hline
-    ATN10 &  \\ \hline
-    \end{tabular}
-%\end{center}
-%\end{table}
-
-
-
-\subsubsection{Ataques físicos no intencionados}
-
-%\begin{table}[h!]
-%\begin{center}
-   \begin{tabular}{ | l | l |}
-    \hline
-    Código & Descripción \\ \hline
-    AMN01 & Volcado de líquidos sobre el equipo \\ \hline
-    AMN02 & Tropiezos por la situación de los aparatos y cables \\ \hline
-    AMN03 & Mantenimiento del edificio: pintura, limpieza, etc. \\ \hline
-    AMN04 & Caídas o vuelques durante el transporte \\ \hline
-    AMN05 &  \\ \hline
-    AMN06 &  \\ \hline
-    AMN07 &  \\ \hline
-    AMN08 &  \\ \hline
-    AMN09 &  \\ \hline
-    AMN10 &  \\ \hline
-    \end{tabular}
-%\end{center}
-%\end{table}
-
-
-\subsubsection{Ataques intencionados}
-
-%\begin{table}[h!]
-%\begin{center}
-   \begin{tabular}{ | l | l |}
-    \hline
-    Código & Descripción \\ \hline
-    ATI01 & Robo \\ \hline
-    ATI02 & Interceptación de datos por medios físicos \\ \hline
-    ATI03 & Sabotaje \\ \hline
-    ATI04 & Vandalismo \\ \hline
-    ATI05 &  \\ \hline
-    ATI06 &  \\ \hline
-    ATI07 &  \\ \hline
-    ATI08 &  \\ \hline
-    ATI09 &  \\ \hline
-    ATI10 &  \\ \hline
-    \end{tabular}
-%\end{center}
-%\end{table}
-
-
-
-\subsubsection{Amenazas físicas no intencionadas}
-
-%\begin{table}[h!]
-%\begin{center}
-   \begin{tabular}{ | l | l |}
-    \hline
-    Código & Descripción \\ \hline
-    AFN01 & Incendio \\ \hline
-    AFN02 & Inundación \\ \hline
-    AFN03 & Inestanqueidad \\ \hline
-    AFN04 & Derrumbe \\ \hline
-    AFN05 & Terremoto \\ \hline
-    AFN06 &  \\ \hline
-    AFN07 &  \\ \hline
-    AFN08 &  \\ \hline
-    AFN09 &  \\ \hline
-    AFN10 &  \\ \hline
-    \end{tabular}
-%\end{center}
-%\end{table}
-
-
-
-\subsubsection{Amenazas físicas intencionadas}
-
-%\begin{table}[h!]
-%\begin{center}
-   \begin{tabular}{ | l | l |}
-    \hline
-    Código & Descripción \\ \hline
-    AFI01 & Incendio \\ \hline
-    AFI02 & Inundación \\ \hline
-    AFI03 & Avería física \\ \hline
-    AFI04 & Destrucción física \\ \hline
-    AFI05 & Corte del servicio eléctrico \\ \hline
-    AFI06 & Corte del servicio telefónico \\ \hline
-    AFI07 & Corte del proveedor de servicios de red \\ \hline
-    AFI08 & Ataque terrorista \\ \hline
-    AFI09 &  \\ \hline
-    AFI10 &  \\ \hline
-    \end{tabular}
-%\end{center}
-%\end{table}
-
-
-
 \subsection{Personal autorizado en los ficheros}
 
 En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de personal está autorizado para la lectura, realización o modificación de dichos ficheros:
@@ -221,6 +61,883 @@ En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de 
  Fichero de producción &  &  &  \\ \hline
  Fichero de informes &  &  &  \\ \hline
 \end{tabular}
+
+
+
+\section{Análisis de riesgos y sensibilidad}
+
+%Aquí se hará un estudio de lo delicada que es la información tratada,
+%y de a qué riesgos se halla sometida, de acuerdo con las tres bases de
+%la seguridad (confidencialidad, integridad y disponibilidad).
+
+En este punto, inicialmente se clasifican los tipos de activos, tipos de amenazas a las que puede ser vulnerable la empresa, describiendo a continuación los riesgos a los que se halla sometida la información con la que se trabaja en Bodegas San Dionisio S.A., además de los criterios de valoración utilizados.
+
+\subsection{Activos}
+
+\subsubsection{[S] Servicios}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Servicios}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[www] & World Wide Web \\
+	\hline
+	[email] & Correo electrónico \\
+	\hline
+	[file] & Almacenamiento de ficheros \\
+	\hline
+	[ftp] & Transferencia de ficheros \\ \end{supertabular}
+\end{center}
+
+
+
+
+\subsubsection{[D] Datos/Información}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Datos/Información}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[vr] & Datos vitales \\
+	\hline
+	[com] & Datos de interés comercial \\
+	\hline
+	[int] & Datos de gestión interna \\
+	\hline
+	[source] & Código fuente \\
+	\hline
+	[exe] & Código ejecutable \\
+	\hline
+	[log] & Registro de actividad \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[SW] Aplicaciones (software)}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Aplicaciones}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[app] & Servidor de aplicaciones \\
+	\hline
+	[file] & Servidor de ficheros \\
+	\hline
+	[dbms] & Sistema de gestión de bases de datos \\
+	\hline
+	[av] & Antivirus \\
+	\hline
+	[os] & Sistema operativo \\
+	\hline
+	[backup] & Sistema de backup \\
+	\hline
+	[mail] & Servidor de correo \\
+	\hline
+	[printer] & Servidor de impresión \\
+	\hline
+	[domain] & Servidor controlador de dominio \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[HW] Equipos informáticos (hardware)}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Equipos informáticos}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[host] & Servidores \\
+	\hline
+	[pc] & Equipos de trabajo \\
+	\hline
+	[network]: [switch] & Conmutadores \\
+	\hline
+	[network]: [router] & Encaminadores \\
+	\hline
+	[network]: [firewall] & Cortafuegos \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[COM] Redes de comunicaciones}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Redes de comunicaciones}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[LAN] & Red local \\
+	\hline
+	[Internet] & Internet \\
+	\hline
+	[vpn] & Red privada virtual \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[SI] Soportes de información}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Soportes de información}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[electronic]: [disk] & Discos \\
+	\hline
+	[electronic]: [san] & Almacenamiento en red \\
+	\hline
+	[electronic]: [disquette] & Disquetes \\
+	\hline
+	[electronic]: [cd] & CD \\
+	\hline
+	[electronic]: [dvd] & DVD \\
+	\hline
+	[electronic]: [tape] & Cintas magnéticas \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[AUX] Equipamiento auxiliar}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Equipamiento auxiliar}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[power] & Fuentes de alimentación \\
+	\hline
+	[ups] & Sistemas de alimentación ininterrumpida \\
+	\hline
+	[ac] & Equipos de climatización \\
+	\hline
+	[cabling] & Cableado \\
+	\hline
+	[robot]: [tape] & Robots de cintas \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[L] Instalaciones}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Instalaciones}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[building] & Edificio \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[P] Personal}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Personal}
+\begin{supertabular}{|p{3cm}|p{7cm}|}
+	[ui] & Usuarios internos \\
+	\hline
+	[op] & Operadores \\
+	\hline
+	[adm] & Administradores de sistemas \\
+	\hline
+	[com] & Administradores de comunicaciones \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsection{Amenazas}
+
+\subsubsection{[N] Desastres naturales}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Nombre} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas de desastres naturales}
+\begin{supertabular}{|p{1.3cm}|p{2.5cm}|p{6.2cm}|}
+	N.1 & Fuego & Incendio: posibilidad de que el fuego acabe con los recursos del sistema. \\
+	\hline
+	N.2 & Daños por agua & Inundación: posibilidad de que el agua acabe con los recursos del sistema. \\ \end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[I] De origen industrial}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Nombre} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas de origen industrial}
+\begin{supertabular}{|p{1.3cm}|p{2.5cm}|p{6.2cm}|}
+	I.1 & Fuego & Incendio: posibilidad de que el fuego acabe con los recursos del sistema. \\
+	\hline
+	I.2 & Daños por agua & Escapes, fugas, inundaciones: posibilidad de que el agua acabe con los recursos del sistema. \\
+	\hline
+	I.3 & Contaminación mecánica & Vibraciones, polvo, suciedad,... \\
+	\hline
+	I.4 & Contaminación electromagnética & Interferencias de radio, campos magnéticos, luz ultravioleta,... \\
+	\hline
+	I.5 & Avería de origen físico o lógico & fallos en los equipos y/o fallos en los programas. Puede ser debida a un defecto de origen o sobrevenida durante el funcionamiento del sistema. \\
+	\hline
+	I.6 & Corte del suministro eléctrico & Cese de la alimentación de potencia. \\
+	\hline
+	I.7 & Condiciones inadecuadas de temperatura y/o humedad & Deficiencias en la aclimatación de los locales, excediendo los márgenes de trabajo de los equipos: excesivo calor, excesivo frío, exceso de humedad,... \\
+	\hline
+	I.8 & Fallo de servicios de comunicaciones & Cese de la capacidad de transmitir datos de un sitio a otro. Típicamente se debe a la destrucción física de los medios físicos de transporte o a la detención de los centros de conmutación, sea por destrucción, detención o simple incapacidad para atender al tráfico presente. \\
+	\hline
+	I.9 & Interrupción de otros servicios y suministros esenciales & Otros servicios o recursos de los que depende la operación de los equipos; por ejemplo, papel para las impresoras, toner, refrigerante,... \\
+	\hline
+	I.10 & Degradación de los soportes de almacenamiento de la información & Como consecuencia del paso del tiempo. \\
+	\hline
+	I.11 & Emanaciones electromagnéticas & Hecho de poner vía radio datos internos a disposición de terceros. Es una amenaza donde el emisor es víctima pasiva del ataque. \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[E] Errores y fallos no intencionados}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Nombre} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas de errores y fallos no intencionados}
+\begin{supertabular}{|p{1.3cm}|p{2.5cm}|p{6.2cm}|}
+	E.1 & Errores de los usuarios & Equivocaciones de las personas cuando usan los servicios, datos, etc. \\
+	\hline
+	E.2 & Errores del administrador & Equivocaciones de personas con responsabilidades de instalación y operación. \\
+	\hline
+	E.3 & Errores de monitorización (log) & Inadecuado registro de actividades: falta de registros, registros incompletos, registros incorrectamente fechados, registros incorrectamente atribuidos,... \\
+	\hline
+	E.4 & Errores de configuración & Introducción de datos de configuración erróneos. \\
+	\hline
+	E.7 & Deficiencias en la organización & Cuando no está claro quién tiene que hacer exactamente qué y cuándo, incluyendo tomar medidas sobre los activos o informar a la jerarquía de gestión. Acciones descoordinadas, errores por omisión, etc. \\
+	\hline
+	E.8 & Difusión de software dañino & Propagación inocente de virus, espías (spyware), gusanos, troyanos, bombas lógicas, etc. \\
+	\hline
+	E.9 & Errores de [re-]encaminamiento & Envío de información a través de un sistema o una red usando, accidentalmente, una ruta incorrecta que lleve la información a donde o por donde no es debido; puede tratarse de mensajes entre personas, entre procesos o entre unos y otros. \\
+	\hline
+	E.10 & Errores de secuencia & Alteración accidental del orden de los mensajes transmitidos. \\
+	\hline
+	E.14 & Escapes de información & La información llega accidentalmente al conocimiento de personas que no deberían tener conocimiento de ella, sin que la información en sí misma se vea alterada. \\
+	\hline
+	E.15 & Alteración de la información & Alteración accidental de la información. \\
+	\hline
+	E.16 & Introducción de información incorrecta & Inserción accidental de información incorrecta. \\
+	\hline
+	E.17 & Degradación de la información & Degradación accidental de la información. \\
+	\hline
+	E.18 & Destrucción de información & Pérdida accidental de información. \\
+	\hline
+	E.19 & Divulgación de información & Revelación por indiscreción. Incontinencia verbal, medios electrónicos, soporte papel, etc. \\
+	\hline
+	E.20 & Vulnerabilidades de los programas (software) & Defectos en el código que dan pie a una operación defectuosa sin intención por parte del usuario pero con consecuencias sobre la integridad de los datos o la capacidad misma de operar. \\
+	\hline
+	E.21 & Errores de mantenimiento / actualización de programas (software) & Defectos en los procedimientos o controles de actualización del código que permiten que sigan utilizándose programas con defectos conocidos y reparados por el fabricante. \\
+	\hline
+	E.23 & Errores de mantenimiento / actualización de equipos (hardware) & Defectos en los procedimientos o controles de actualización de los equipos que permiten que sigan utilizándose más allá del tiempo nominal de uso. \\
+	\hline
+	E.24 & Caída del sistema por agotamiento de recursos & La carencia de recursos suficientes provoca la caída del sistema cuando la carga de trabajo es desmesurada. \\
+	\hline
+	E.28 & Indisponibilidad del personal & Ausencia accidental del puesto de trabajo: enfermedad, alteraciones del orden público, guerra bacteriológica,... \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[A] Ataques intencionados}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Código} & \textbf{Nombre} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas de ataques intencionados}
+\begin{supertabular}{|p{1.3cm}|p{2.5cm}|p{6.2cm}|}
+	A.4 & Manipulación de la configuración & Prácticamente todos los activos dependen de su configuración y ésta de la diligencia del administrador: privilegios de acceso, flujos de actividades, registro de actividad, encaminamiento, etc. \\
+	\hline
+	A.5 & Suplantación de la identidad del usuario & Cuando un atacante consigue hacerse pasar por un usuario autorizado, disfruta de los privilegios de este para sus fines propios. \\
+	\hline
+	A.6 & Abuso de privilegios de acceso & Cada usuario disfruta de un nivel de privilegios para un determinado propósito; cuando un usuario abusa de su nivel de privilegios para realizar tareas que no son de su competencia, hay problemas. \\
+	\hline
+	A.7 & Uso no previsto & Utilización de los recursos del sistema para fines no previstos, típicamente de interés personal: juegos, consultas personales en Internet, bases de datos personales, programas personales, almacenamiento de datos personales, etc. \\
+	\hline
+	A.8 & Difusión de software dañino & Propagación intencionada de virus, espías (spyware), gusanos, troyanos, bombas lógicas, etc. \\
+	\hline
+	A.9 & [Re-]encaminamiento de mensajes & Envío de información a un destino incorrecto a través de un sistema o una red, que llevan la información a donde o por donde no es debido; puede tratarse de mensajes entre personas, entre procesos o entre unos y otros. \\
+	\hline
+	A.10 & Alteración de secuencia & Alteración del orden de los mensajes transmitidos. Con ánimo de que el nuevo orden altere el significado del conjunto de mensajes, perjudicando a la integridad de los datos afectados. \\
+	\hline
+	A.11 & Acceso no autorizado & El atacante consigue acceder a los recursos del sistema sin tener autorización para ello, típicamente aprovechando un fallo del sistema de identificación y autorización. \\
+	\hline
+	A.12 & Análisis de tráfico & El atacante, sin necesidad de entrar a analizar el contenido de las comunicaciones, es capaz de extraer conclusiones a partir del análisis del origen, destino, volumen y frecuencia de los intercambios. A veces se denomina monitorización de tráfico. \\
+	\hline
+	A.13 & Repudio & Negación a posteriori de actuaciones o compromisos adquiridos en el pasado. \\
+	\hline
+	A.14 & Interceptación de información (escucha) & El atacante llega a tener acceso a información que no le corresponde, sin que la información en sí misma se vea alterada. \\
+	\hline
+	A.15 & Modificación de la información & Alteración intencional de la información, con ánimo de obtener un beneficio o causar un perjuicio. \\
+	\hline
+	A.16 & Introducción de falsa información & Inserción interesada de información falsa, con ánimo de obtener un beneficio o causar un perjuicio. \\
+	\hline
+	A.17 & Corrupción de la información & Degradación intencional de la información, con ánimo de obtener un beneficio o causar un perjuicio. \\
+	\hline
+	A.18 & Destrucción la información & Eliminación intencional de información, con ánimo de obtener un beneficio o causar un perjuicio. \\
+	\hline
+	A.19 & Divulgación de información & Revelación de información. \\
+	\hline
+	A.22 & Manipulación de programas & Alteración intencionada del funcionamiento de los programas, persiguiendo un beneficio indirecto cuando una persona autorizada lo utiliza. \\
+	\hline
+	A.24 & Denegación de servicio & La carencia de recursos suficientes provoca la caída del sistema cuando la carga de trabajo es desmesurada. \\
+	\hline
+	A.25 & Robo & La sustracción de equipamiento provoca directamente la carencia de un medio para prestar los servicios, es decir una indisponibilidad. \\
+	\hline
+	A.26 & Ataque destructivo & Vandalismo, terrorismo, acción militar,... \\
+	\hline
+	A.27 & Ocupación enemiga & Cuando los locales han sido invadidos y se carece de control sobre los propios medios de trabajo. \\
+	\hline
+	A.28 & Indisponibilidad del personal & Ausencia deliberada del puesto de trabajo: como huelgas, absentismo laboral, bajas no justificadas, bloqueo de los accesos, ... \\
+	\hline
+	A.29 & Extorsión & Presión que, mediante amenazas, se ejerce sobre alguien para obligarle a obrar en determinado sentido. \\
+	\hline
+	A.30 & Ingeniería social & Abuso de la buena fe de las personas para que realicen actividades que interesan a un tercero. \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsection{Dimensiones}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Nombre} & \textbf{Descripción} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{2}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Dimensiones}
+\begin{supertabular}{|p{3.5cm}|p{7cm}|}
+	\textbf{[D] Disponibilidad} & Aseguramiento de que los usuarios autorizados tienen acceso cuando lo requieran a la información y sus activos asociados. \\
+	\hline
+	\textbf{[I] Integridad de los datos} & Garantía de la exactitud y completitud de la información y los métodos de su procesamiento. \\
+	\hline
+	\textbf{[C] Confidencialidad de los datos} & Aseguramiento de que la información es accesible sólo para aquellos autorizados a tener acceso. \\
+	\hline
+	\textbf{[A\_S] Autenticidad de los usuarios del servicio} & Aseguramiento de la identidad u origen. \\
+	\hline
+	\textbf{[A\_D] Autenticidad del origen de los datos} & Aseguramiento de la identidad u origen. \\
+	\hline
+	\textbf{[T\_S] Trazabilidad del servicio} & Aseguramiento de que en todo momento se podrá determinar quién hizo qué y en qué momento. \\
+	\hline
+	\textbf{[T\_D] Trazabilidad de los datos} & Aseguramiento de que en todo momento se podrá determinar quién hizo qué y en qué momento. \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsection{Criterios de valoración}
+
+Para valorar los activos se ha elegido una escala detallada de diez valores, dejando en valor 0 como determinante de lo que sería un valor despreciable (a efectos de riesgo). Hay que tener muy en cuenta que:
+
+\begin{itemize}
+\item Se use una escala común para todas las dimensiones, permitiéndo comparar riesgos.
+\item Se use una escala logarítmica, centrada en diferencias relativas de valor, que no en diferencias
+absolutas.
+\item Se use un criterio homogéneo que permita comparar análisis realizados por separado.
+\end{itemize}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\multicolumn{2}{|l|}{\textbf{Valor}} & \textbf{Criterio} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{3}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Criterio de valoración}
+\begin{supertabular}{|p{1.5cm}|p{1.5cm}|p{5.5cm}|}
+	10 & Muy alto & Daño muy grave a la organización \\
+	\hline
+	7-9 & Alto & Daño grave a la organización \\
+	\hline
+	4-6 & Medio & Daño importante a la organización \\
+	\hline
+	1-3 & Bajo & Daño menor a la organización \\
+	\hline
+	0 & Muy bajo & Daño irrelevante a efectos prácticos \\
+\end{supertabular}
+\end{center}
+
+
+
+\subsection{Amenazas, dimensiones y valoraciones por activo}
+
+\subsubsection{[S] Servicios}
+
+Función que satisface una necesidad de los usuarios (del servicio). Para la prestación de un servicio se requieren una serie de medios.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por servicios}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[www] & [E.1] [E.2] [E.20] [A.6] [A.11] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[email] & [E.2] [E.9] [E.14] [E.20] [A.6] [A.11] [A.14] [A.24] & [D] [I] [C] [A\_S] [A\_D] & 7 \\
+	\hline
+	[file] & [E.1] [E.2] [E.9] [E.14] [E.20] [A.6] [A.11] [A.14] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[ftp] & [E.2] [E.14] [E.20] [A.6] [A.11] [A.12] [A.14] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[D] Datos/Información}
+
+Elementos de información que, de forma singular o agrupados de alguna forma, representan el conocimiento que se tiene de algo. Los datos son el corazón que permite a la empresa prestar sus servicios. Son en cierto sentido un activo abstracto que será almacenado en los servidores.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por datos/información}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[vr] & [E.1] [E.2] [E.7] [E.9] [E.14] [E.15] [E.16] [E.18] [E.19] [E.20] [A.6] [A.11] [A.14] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[com] & [E.1] [E.2] [E.7] [E.9] [E.14] [E.15] [E.16] [E.18] [E.19] [E.20] [A.6] [A.11] [A.14] & [D] [I] [C] [A\_S] [A\_D] & 8 \\
+	\hline
+	[int] & [E.1] [E.2] [E.7] [E.9] [E.14] [E.15] [E.16] [E.18] [E.19] [E.20] [A.6] [A.11] [A.14] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[source] & [E.1] [E.2] [E.4] [E.14] [E.18] [E.19] [E.20] [A.6] [A.11] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[exe] & [E.1] [E.2] [E.4] [E.8] [E.14] [E.18] [E.19] [E.20] [A.8] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\hline
+	[log] & [E.2] [E.3] [E.4] [E.15] [E.18] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 8 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[SW] Aplicaciones (software)}
+
+Con múltiples denominaciones (programas, aplicativos, desarrollos, etc.) este epígrafe se refiere a tareas que han sido automatizadas para su desempeño por un equipo informático. Las aplicaciones gestionan, analizan y transforman los datos permitiendo la explotación de la información para la prestación de los servicios.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por aplicaciones}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[app] & [E.2] [E.8] [E.20] [A.8] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[file] & [E.2] [E.4] [E.18] [E.19] [A.6] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[dbms] & [E.2] [E.4] [E.15] [E.16] [E.18] [E.19] [E.20] [A.6] [A.8] [A.11] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[av] & [E.2] [E.8] [E.20] [A.8] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[os] & [E.2] [E.4] [E.20] [A.6] [A.8] [A.20] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[backup] & [E.2] [E.4] [E.18] [E.19] [A.6] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[mail] & [E.2] [E.4] [E.20] [A.6] [A.8] [A.20] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[printer] & [E.2] [E.4] [E.20] [A.6] [A.8] [A.20] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[domain] & [E.2] [E.4] [E.20] [A.6] [A.8] [A.20] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[HW] Equipos informáticos (hardware)}
+
+Dícese de bienes materiales, físicos, destinados a soportar directa o indirectamente los servicios que presta la organización, siendo pues depositarios temporales o permanentes de los datos, soporte de ejecución de las aplicaciones informáticas o responsables del procesado o la transmisión de datos.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por equipos informáticos}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[host] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.4] [I.5] [I.6] [I.7] [E.4] [E.23] [A.7] [A.8] [A.11] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\hline
+	[pc] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] [A.7] [A.8] [A.11] & [D] [I] [C] [A\_S] [A\_D] & 8 \\
+	\hline
+	[network]: [switch] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.4] [E.9] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\hline
+	[network]: [router] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.4] [E.9] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\hline
+	[network]: [firewall] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.4] [E.9] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[COM] Redes de comunicaciones}
+
+Incluyendo tanto instalaciones dedicadas como servicios de comunicaciones contratados a terceros; pero siempre centrándose en que son medios de transporte que llevan datos de un sitio a otro.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por redes de comunicaciones}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[LAN] & [E.2] [E.4] [E.9] [E.23] [A.7] [A.8] [A.11] [A.12] [A.14] [A.24] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[Internet] & [E.2] [E.4] [E.9] [A.7] [A.8] [A.12] [A.14] [A.24] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 6 \\
+	\hline
+	[vpn] & [E.2] [E.4] [E.9] [A.7] [A.8] [A.11] & [D] [I] [C] [A\_S] [A\_D] [T\_S] [T\_D] & 10 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[SI] Soportes de información}
+
+En este epígrafe se consideran dispositivos físicos que permiten almacenar información de forma permanente o, al menos, durante largos periodos de tiempo.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por soportes de información}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[electronic]: [disk] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[electronic]: [san] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\hline
+	[electronic]: [disquette] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\hline
+	[electronic]: [cd] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\hline
+	[electronic]: [dvd] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 9 \\
+	\hline
+	[electronic]: [tape] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [I] [C] [A\_S] [A\_D] & 10 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[AUX] Equipamiento auxiliar}
+
+En este epígrafe se consideran otros equipos que sirven de soporte a los sistemas de información,
+sin estar directamente relacionados con datos.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por equipamiento auxiliar}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[power] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] & 8 \\
+	\hline
+	[ups] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.4] [E.23] & [D] & 8 \\
+	\hline
+	[ac] & [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] & 10 \\
+	\hline
+	[cabling] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] & 8 \\
+	\hline
+	[robot]: [tape] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] & 8 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[L] Instalaciones}
+
+En este epígrafe entran los lugares donde se hospedan los sistemas de información y comunicaciones.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por instalaciones}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[building] & [N.1] [N.2] [I.1] [I.2] [I.3] [I.5] [I.6] [E.23] & [D] [A\_S] [A\_D] & 10 \\
+	\end{supertabular}
+\end{center}
+
+
+
+\subsubsection{[P] Personal}
+
+En este epígrafe aparecen las personas relacionadas con los sistemas de información.
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Activo} & \textbf{Amenazas} & \textbf{Dimensiones} & \textbf{Valoración} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Amenazas, dimensiones y valoraciones por personal}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm}|p{1.8cm}|}
+	[ui] & [A.19] [A.29] [A.30] & [D] & 8 \\
+	\hline
+	[op] & [A.19] [A.29] [A.30] & [D] & 7 \\
+	\hline
+	[adm] & [A.19] [A.29] [A.30] & [D] & 6 \\
+	\hline
+	[com] & [A.19] [A.29] [A.30] & [D] & 6 \\
+	\end{supertabular}
+\end{center}
 
 
 
