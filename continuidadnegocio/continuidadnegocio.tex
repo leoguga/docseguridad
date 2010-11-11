@@ -1,7 +1,3 @@
-
-Este capítulo se dedica fundamentalmente a las medidas de recuperación
-en caso de un ataque o un desastre.
-
 \section{Introducción}
 
 En esta primera sección se puede describir qué partes son
@@ -13,15 +9,90 @@ Habrá que priorizar la recuperación de ciertos activos frente a otros:
 servidores frente a estaciones de trabajo, datos sensibles frente a
 información derivada, etc.
 
-\section{Copias de seguridad}
 
-Esta sección se dedica a las copias de seguridad, indicando de qué se
-harán copias, con qué frecuencia, de qué tipos, usando qué soportes y
-juegos de copias, etc.
+
+\section{Copias de seguridad}
+Se realizarán copias de seguridad periódicamente, trasladando las cintas a la sala destinada a ello, fuera de los edificios de los que consta la empresa, para así evitar que se pierdan los backups junto a los datos originales por determinadas causas, como incendios o inundaciones por ejemplo.
+
+Las copias se guardarán con orden cronológico, manteniendo así una estructura lógica de almacenado, facilitando la búsqueda de alguna cinta si fuese necesario.
+
+Las copias de seguridad contendrán los siguientes datos:
+
+\begin{enumerate}
+\item Datos de usuarios.
+\item Datos de estado del sistema.
+\item Registros.
+\end{enumerate}
+
+Cubren amenazas de ataques no intencionados (ATN01-ATN04), interceptación de datos por medios físicos (ATI02), así como pérdida de información por ataques físicos (intencionados o no) y por amenzas físicas (intencionadas o no). Se debe tener en cuenta que están enfocadas a una futura recuperación de los datos del sistema (o parte de este), por lo que el proceso de copias debe ser confiable. Así como asegurar que si hiciese falta una recuperación, esta fuese rápida y eficiente.
+
+Se ha decidido hacer backups combinando dos tipos de copias, completas y diferenciales. Esta elección se ha tomado teniendo en cuenta la frecuencia de las copias y el método de almacenamiento, los cuales veremos a continuación. Se explicará en cada caso el por qué de la eleccion del tipo de copia de acuerdo a las necesidades. También se ha de tener en cuenta que las copias diferenciales ofrece una mayor facilidad en la búsqueda de archivos, pudiendo ser esta más tediosa usando copias progresivas.
+
+\subsection{Tipos de copias y frecuencia}
+Se realizarán dos tipos de copias de seguridad, cada uno con un fin distinto: 
+
+\begin{itemize}
+\item Diferenciales: Realizaremos copias diferenciales diariamente, de manera que obtendremos una cinta al día con los datos modificados desde la última copia completa que se haya realizado. 
+
+\item Completas: Se realizarán distinto tipos de copias completas:
+
+	\begin{itemize}
+	\item Semanales: Cada semana se realizará una copia completa de los datos de esos siete días. Es decir, al cabo de 4 semanas, se habría obtenido una cinta con los nuevos datos generados o modificados de cada semana.
+	\item Mensuales: Al finalizar cada més se realizará una copia completa de los datos del sistema.
+	\end{itemize}
+
+\end{itemize}
+
+La razón por la que se realiza la copia completa semanal es para evitar que la copia diaria diferencial llegue a ser suficientemente grande, y así el tiempo de realización de la copia no crezca excesivamente. La diferencia de hacer la copia semanal completa y hacer una diferencial más reside en que el siguiente día las copias diferenciales empezarán a hacerse desde esta última copia, por lo que la cantidad de datos que almacenarán no será nunca superior a la de 6 días de modificación o creación de los mismos.
+
+Dichas copias automatizadas se realizarán en un horario en el que no se esté haciendo uso de las instalaciones, para evitar en medida de lo posible que se estén manejando datos al mismo tiempo que se realiza la copia, por lo que sería una opción lógica que se realicen en horario nocturno. 
+
+Para mayor seguridad y confidencialidad, los backups se realizarán cifrando la información, de manera que si fuese necesario una recuperación de los datos, el mismo software de cifrado desencriptaría los datos para su correcta restauración en el sistema, sea este o no el encargado de realizar o leer las copias de seguridad con las que se trabajen.
+
+Por otra parte, el software encargado de la realización de las copias verificaría, una vez acabado el proceso, que el backup se ha realizado correctamente, sin ningún tipo de error, obteniéndose una copia fiable de los datos correspondientes.
+
+\subsection{Almacenamiento}
+Las copias diarias se alamacenarán en un lugar seguro dedicado expresamente a ello dentro de la organización de la empresa, en una sala del edificio de oficinas, con la seguridad necesaria. Se utilizarán 6 cintas para este tipo de copias, una para cada día de la semana, ya que el séptimo día se realizará una copia completa, por lo que la diaría no sería necesaria. Las cintas se reutilizarían en cada ciclo de copias, siendo estas reemplazadas por nuevas cada cierto periodo de tiempo que puedan empezar a deteriorarse por su uso.
+
+Al igual que las copias diarias, las semanales se tratarán con el mismo método, constando este ciclo con 4 cintas que se graban semanalmente. Al final de cada mes se realizará una copia completa, por lo que las cintas podrán ser reutilizadas como se ha explicado anteriormente.
+
+La copia completa mensual se tratará de diferente forma, ya que será trasladada a un edificio ageno a donde esté el equipamiento de la empresa, para evitar la pérdida de los datos originales y copias por catástrofes como incendios, terremotos, inundaciones, etc. Estarán en un lugar con las medidas de seguridad adecuadas y seguras de amenzas como las que hemos nombrado, si fuese posible en una caja fuerte a prueba de fuego.
+
+Todas las copias serán almacenadas siguiendo un orden cronológico, tanto las diarias y semanales en su correspondiente sala, como las copias completas mensuales fuera de las instalaciones principales de Bodegas San Dionisio, S.A.; este orden lógico facilitará la búsqueda de alguna determinada copia de una fecha específica.
+
+Todo el formato físico de copias quedaría correctamente etiquetado. Esto significa que dicha etiqueta estaría cifrada mediante un código interno a la organización. Por ejemplo, se podrían usar 6 caracteres alfanuméricos, de forma que el primero se establezca para indicar a qué departamento pertenecen los datos:
+
+\begin{itemize}
+\item 1: Departamento Administrativo 
+\item 2: Departamento Comercial
+\item 3: Departamento de Producción
+\item 4: Departamento de IM/IT
+\item 5: Departamento Financiero
+\end{itemize}
+
+el segundo caracter indicara qué tipo de backup es:
+
+\begin{itemize}
+\item D: Diario
+\item S: Semanal
+\item M: Mensual
+\end{itemize}
+
+y el resto para la fecha en que se ha realizado la copia, también debidamente encriptada, pudiendo usar indistintamente letras o números para referirse al día, mes y año; por ejemplo, el mes de la A (letra 1 del abecedario) hasta la L (letra 12), y el año el número de años que ha trascurrido desde 1990.
+
+Este etiquetado evita la posibilidad que una persona agena pueda buscar información en los backups o, al menos, que no le sea fácil hacerlo mediante la información visible.
+
+El cifrado de información y de las etiquetas de las copias ayudan a las amenazas de ataques no intencionados (ATN01-ATN03), así como interceptación o pérdida de información.
+
+
+\subsection{Responsable}
+
+El jefe de IT delegará un miembro del departamento para realizar las copias de seguridad. El responsable designado elaborará un procedimiento para probar las copias de seguridad y pruebas de restauración de las copias de seguridad sobre una base mensual.
+
 
 \section{Recuperación de activos}
 
-Planificación para la recuperación de un activo ante un desastre o un
+"Planificación para la recuperación de un activo ante un desastre o un
 ataque. Puede tratarse de una parte de las infraestructuras, hardware,
 software (con su configuración asociada), o datos.
 
@@ -30,4 +101,21 @@ actualizada sobre el estado de la configuración de los sistemas, de
 forma que ante un ataque al software se pueda reinstalar y volver a
 configurar. Esto requiere señalar quién será responsable de mantener
 dicha documentación al día, con qué periodicidad será revisada, y
-quién llevará el control de dichas medidas, entre otros aspectos.
+quién llevará el control de dichas medidas, entre otros aspectos."
+
+En caso de que se sufra un desastre o ataque, la recuperación de activos dependerá del tipo de ataque que haya ocurrido: 
+
+\begin{itemize}
+\item Datos: Si los daños sufridos han sido sobre los datos, se podrían tomar varias acciones dependiendo del daño:
+
+	\begin{itemize}
+	\item Si han sido los datos del sistema los que han sufrido el ataque, se tendría que llevar a cabo una restauración o recuperación de los mismos usando para ello las copias de seguridad que se han ido llevando a cabo regularmente de acuerdo a lo redactado anteriormente. Si el ataque se ha dado durante el último mes, la recuperación de datos se podrá realizar de manera agilizada, ya que se tendría acceso casi inmediato a los datos, que se encontrarían en la sala destinada a ubicar estas copias, en el edificio de oficinas. Por lo que bastaría con recuperar la copia deseada y volcar el contenido en el sistema, recuperando la pérdida o modificación de datos que se ha sufrido.
+	\item En cambio, si los datos que han sido objeto del ataque son los backups, se habría de actuar de la manera opuesta. Es decir, si se han perdido o deteriorado las copias de seguridad, la recuperación de estas se haría simplemente realizando nuevas copias de los datos del sistema. Las nuevas copias sustituirían a las que han sufrido los daños, quedando almacenadas en el lugar correspondiente y sin afectar esto a la continua creación de copias de seguridad que debe seguir desarrollándose diariamente.
+	\item Si, desafortunadamente, tanto los datos actual del sistema como las copias de seguridad sufren daños, estaríamos ante un problema más serio. En este caso, la recuperación de los datos sería prácticamente imposible, a no ser que se haya perdido por borrado de memoria y se pueda usar un software de recuperación de datos borrados. En otro caso, como incendio o inundación por ejemplo, no quedaría más remedio que recopilar de nuevo todos los datos perdidos mediante las mismas fuentes que se obtuvieron originalmente. Por este motivo se almacenan las copias mensuales completas en otro lugar físico, minimizando la posibilidad de que se pierdan los datos originales y las copias de ellos. Sería más probable que esto ocurriera con las copias diarias y semanales, pero la recuperación de estos datos sería más asequible que hacerlo de todos los datos de la empresa, ya que serían los datos modificados o creados dentro del último mes a lo sumo.
+	\end{itemize}
+
+\item Hardware: Si el ataque o desastre afecta al hardware, la opción posible es la recuperación del equipo afectado mediante adquisición de uno nuevo. Normalmente, esto implica la compra del producto y su correspondiente instalación correcta en el sistema, haciendo uso de las copias de seguridad si es necesario recuperar datos o archivos de configuración del sistema que se hayan copiado. Es posible que en la empresa se disponga de un recambio para ese hardware si se trata de un monitor o un ordenador, con lo que la recuperación no se demoraría demasiado, pero si el problema ocurre con algo un poco más sofisticado o algún recurso de red es posible que este se demore un poco más.
+
+\item Infraestructura: En caso que la infraestructura del edificio o de alguna sala sufra los daños el problema toma otro color. Si el problema es de infraestructuras como armarios, puertas, etc., se llevaría a cabo su arreglo para que la organización siga funcionando normalmente. Si el problema es más serio, con daños en la estructura del edificio, habría que etudiarse la posibilidad de abandonar las instalaciones, ya fuese temporal o definitivamente, o simplemente el arreglo de la zona afectada sin necesidad de desalojo. Si este daño afecta al hardware también, se actuaría como se ha especificado anteriormente.
+\end{itemize}
+
