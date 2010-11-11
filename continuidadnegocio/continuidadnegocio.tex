@@ -13,7 +13,7 @@ Las copias de seguridad contendrán los siguientes datos:
 \item Registros.
 \end{enumerate}
 
-Cubren amenazas de ataques no intencionados (ATN01-ATN04), interceptación de datos por medios físicos (ATI02), así como pérdida de información por ataques físicos (intencionados o no) y por amenzas físicas (intencionadas o no). Se debe tener en cuenta que están enfocadas a una futura recuperación de los datos del sistema (o parte de este), por lo que el proceso de copias debe ser confiable. Así como asegurar que si hiciese falta una recuperación, esta fuese rápida y eficiente.
+Cubren amenazas de desastres naturales (N.1, N.2), de origen industrial (I.1-I.7, I.11), errores y fallos no intencionados (E.1,E.2, E.8, E.15, E.17, E.18), ataques intencionados (A.4, A.8, A.11, A.15-A.18, A.22, A.25-A.27, A.29). Se debe tener en cuenta que están enfocadas a una futura recuperación de los datos del sistema (o parte de este), por lo que el proceso de copias debe ser confiable. Así como asegurar que si hiciese falta una recuperación, esta fuese rápida y eficiente.
 
 Se ha decidido hacer backups combinando dos tipos de copias, completas y diferenciales. Esta elección se ha tomado teniendo en cuenta la frecuencia de las copias y el método de almacenamiento, los cuales veremos a continuación. Se explicará en cada caso el por qué de la eleccion del tipo de copia de acuerdo a las necesidades. También se ha de tener en cuenta que las copias diferenciales ofrece una mayor facilidad en la búsqueda de archivos, pudiendo ser esta más tediosa usando copias progresivas.
 
@@ -71,8 +71,7 @@ y el resto para la fecha en que se ha realizado la copia, también debidamente en
 
 Este etiquetado evita la posibilidad que una persona agena pueda buscar información en los backups o, al menos, que no le sea fácil hacerlo mediante la información visible.
 
-El cifrado de información y de las etiquetas de las copias ayudan a las amenazas de ataques no intencionados (ATN01-ATN03), así como interceptación o pérdida de información.
-
+El cifrado de información y de las etiquetas de las copias ayudan a las amenazas E.14, E.16, E.18, E.19, A.4, A.14, A.18 y A.19.
 
 \subsection{Responsable}
 
