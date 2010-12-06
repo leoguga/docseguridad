@@ -18,23 +18,23 @@ MaxPos.x=-4
 MaxPos.y=-30
 NormalPos.left=22
 NormalPos.top=29
-NormalPos.right=770
-NormalPos.bottom=208
+NormalPos.right=860
+NormalPos.bottom=213
 Class=CLatexEdit
-Document=politicaseguridad.tex
+Document=seguridadinformacion\seguridadinformacion.tex
 
 [Frame0_Row0]
-cyCur=124
+cyCur=129
 cyMin=10
 
 [Frame0_Col0]
-cxCur=719
+cxCur=809
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=6
-Cursor.column=21
-TopSubLine=0
+Cursor.row=94
+Cursor.column=10
+TopSubLine=97
 
 [Frame1]
 Columns=1
@@ -47,10 +47,10 @@ MaxPos.x=-4
 MaxPos.y=-30
 NormalPos.left=22
 NormalPos.top=29
-NormalPos.right=860
-NormalPos.bottom=213
+NormalPos.right=770
+NormalPos.bottom=208
 Class=CLatexEdit
-Document=seguridadinformacion\seguridadinformacion.tex
+Document=politicaseguridad.tex
 
 [Frame1_Row0]
 cyCur=244
@@ -61,9 +61,9 @@ cxCur=883
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=94
-Cursor.column=10
-TopSubLine=99
+Cursor.row=40
+Cursor.column=90
+TopSubLine=34
 
 [Frame2]
 Columns=1
