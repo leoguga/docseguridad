@@ -28,12 +28,73 @@ Las medidas mínimas de deguridad contraseña para usuarios del sistema operativo 
 	\item Máximo de 3 intentos de acceso. En el caso de fallar 3 veces se bloquea el usuario y se debe contactar con el Administrador de Sistemas para resetear el usuario.
 \end{itemize}
 
-\section{Registro de accesos}
+\section{\textbf{Registro de accesos}}
+\subsection{\textbf{Gestión de privilegios de usuarios}}
+\paragraph{}
+Se seguirán en general las pautas marcadas en el punto 9.1 del estándar ISO 17799,
+siguiendo un enfoque de sistema de permisos cerrado, donde todo lo que no se permite explícitamente está prohibido. Cada usuario será categorizado en una serie de perfiles en función de su trabajo, cumpliendo con el principio del mínimo privilegio: sólo podrán hacer lo que necesitan para su trabajo.
+\paragraph{}
+De forma acorde al punto 9.2 del estándar, se establecerán procesos de alta y baja de
+los usuarios en los sistemas de información. En particular, cuando un usuario es dado de alta en persona en las oficinas administrativas de la Organización, tras haber presentado pruebas de su identidad, será añadido al directorio LDAP de la organización.
+\paragraph{}
+El usuario recibirá un documento escrito con una relación de sus privilegios y su
+responsabilidad de evitar su uso indebido. Este documento ha de ser firmado por el usuario.
+\paragraph{}
+El usuario obtendrá nombres de usuario y claves de acceso seguras para cada aplicación que necesite para cumplir su trabajo. Posteriormente, y en su primer acceso,  será de su responsabilidad cambiar las claves.
+\paragraph{}
+A la hora de la baja, que habrá de realizarse también en persona y con pruebas de identidad. Se desactivarán todas las cuentas del usuario.
+\paragraph{}
+Cada 6 meses se revisará el listado de privilegios de todos los usuarios del sistema, buscando posibles incongruencias o permisos innecesarios y cada 2 meses,  por el riesgo mayor que representan, se realizarán listados de los usuarios que posean permisos administrativos de los sistemas.
+\subsection{\textbf{Acceso al Sistema Operativo.}}
+\paragraph{}
+Las medidas en este aspecto serán las expuestas en el punto 9.5 del ISO 17799.
+No se podrá iniciar sesión a nivel de sistema operativo de manera remota en principio a ninguna máquina, salvo por aquellas que requieran un mantenimiento continuo. Éstas conexiones remotas deberán hallarse cifradas, empleando el protocolo Secure SHell (SSH).
+\paragraph{}
+Toda estación de trabajo, sea cual sea el sistema operativo que soporte, harán uso de los mecanismos existentes de protección por contraseña para el acceso al sistema.
+\paragraph{}
+Las contraseñas tendrán una caducidad de 2 meses.
+\paragraph{}
+La BIOS de todas las máquinas estarán protegidas con contraseña. Esta será la misma para todas las máquinas y solo serán accesibles por el personal técnico.
+\paragraph{}
+El fichero de contraseñas tendrá sus propias medidas de seguridad, de forma acorde
+al Real Decreto RD994/1999 de la legislación española, recogidas en su propio documento de seguridad. En particular, no será legible para otro usuario que el
+Administrador de Seguridad.
+\subsection{\textbf{Acceso a los programas y datos}}
+\paragraph{}
+Sólo los usuarios que lo requieran tendrán acceso a cada aplicación, siguiendo estrictamente un esquema cliente/servidor a través de la red de la empresa
+\paragraph{}
+Los usuarios normales nunca tendrán acceso directo a los soportes con la información, sólo a los programas que manejan dicha información.
+\paragraph{}
+Las aplicaciones web tendrán limitada su disponibilidad a horario de oficina, para evitar que puedan ser atacadas cuando no se encuentre el personal de seguridad en la empresa.
+\subsection{\textbf{Registro de entradas}}
+\paragraph{}
+Se harán de auditorías de las aplicaciones y sistemas operativos para registrar
+toda entrada y salida del sistema, ejecución de operaciones de alto impacto y fallos de
+grave importancia.
+\paragraph{}
+Se examinarán todos los intentos fallidos de entrada, realizando estadísticas que pongan en relieve aquellas que puedan dar sospechas de ser maliciosas.
+\paragraph{}
+Los usuarios serán notificados de la fecha y hora de su última entrada, quedando obligado a advertir al departamento de informática cualquier anomalía que detecten.
+\paragraph{}
+Los ficheros de registro serán protegidos debidamente a través del uso de los permisos correspondientes sobre el fichero, siendo sólo legibles por los administradores y personal técnico correspondiente.
+\paragraph{}
+Se evitara que los archivos sean demasiado grandes, para ello se rotarán los
+ficheros de auditoría cada semana, manteniendo tres ciclos en el sistema y
+pasando a copias de seguridad posteriormente.
+\subsection{\textbf{Responsabilidades}}
+\paragraph{}
+\textbf{Administrador de Seguridad y personal técnico:} bloquear toda cuenta de usuario una vez no se necesite, y crear las cuentas con contraseñas aleatorias seguras. El Administrador tendrá que revisar las incidencias de accesos fallidos, y comunicar cualquier posible ataque al Comité.
+\paragraph{}
+\textbf{Resto personal:} mantener las claves en secreto, las nuevas contraseñas deberán
+cumplir unos niveles mínimos de calidad y serán responsables de cualquier sustracción o pérdida de la tarjeta identificativa sila tuvieran
 
-ESTO ES LO HAGO YO (LUIS)
- algunos equipos puede ser Ãºtil llevar un control de quién ha
-accedido, desde dónde, etc.
 
+
+
+
+
+
+HASTA AQUI LUIS
 \section{Protección ante software malicioso}
 
 Para combatir ciertas amenazas como malware..., se tendrá instalado en el servidor un antivirus con su correspondiente licencia, Kaspersky Bussiness Space Security en este caso, de manera que los ordenadores de los empleados se actualizarán por los reponsables de Sistemas o mediante actualizaciones programadas a diario, esto hace que sea más cómodo y que siempre estén actualizados puesto que no estarán instalados de manera local en cada ordenador, llevando así un mayor control evitando así que la obligación de tener los ordenadores actualizados recaiga en el trabajador.
