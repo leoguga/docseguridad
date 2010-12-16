@@ -1,24 +1,32 @@
 \label{ch:swhw}
-En este capítulo se tratarán los aspectos relacionados con la
-seguridad del software desarrollado y/o utilizado internamente, y la
-prevención, detección y diagnóstico del software malicioso. También se
-tratarán los aspectos relacionados con el hardware de los activos de
-la organización.
-
-Para los aspectos de desarrollo de software, se puede tomar como guía
-en la sección de desarrollo las recomendaciones de las transparencias
-y los informes CWE más relevantes, posiblemente integrándolos en las
-revisiones periódicas del código, si se desean implantar.
-
-Habrá que analizar los riesgos que supone el software malicioso, y en
-base a ellos plantear las debidas medidas de prevención, detección y
-recuperación.
-
 \section{Identificación y autenticación}
 
-Se recogen las distintas medidas a través de las cuales se limitará el
-acceso a los distintos equipos al personal que los necesite para su
-trabajo.
+La identificación y autenticación a la red corporativa está centralizada. Esto quiere decir que cada empleado tiene su
+nombre de usuario y contraseña que le permite acceder a:
+
+\begin{enumerate}
+	\item El propio sistema operativo.
+
+\item Los datos organizados en forma de archivos del sistema operativo, como cualquiera producido por herramientas de oficina (Textos, Hojas de cálculo, imágenes, etc.), y que sean accesibles a través del sistema de ficheros del sistema operativo.
+
+\item Correo electrónico corporativo.
+
+\item El acceso a las distintas aplicaciones corporativas puestas a disposición por la companía, cuyo acceso se prohibe fuera del entorno de seguridad de la red corporativa. El acceso a través de una red privada virtual está autorizado por esta política.
+\end{enumerate}
+
+\subsection{Nombre de usuario}
+El nombre de usuario se obtiene a partir del nombre del empleado. Por ejemplo: para un empleado llamado Juan Perez Madrid su nombre de usuario será: jperez, que se compone por las iniciales de su nombre seguido de su primer apellido.
+\paragraph{}
+En caso de que haya dos empleados con el mismo nombre se puede adoptar cualquier regla que
+permita identificarlos, por ejemplo: vimmartinez, vicmmartinez, etc.
+\subsection{Contraseña}
+Las medidas mínimas de deguridad contraseña para usuarios del sistema operativo son:
+\begin{itemize}
+	\item Tamaño mínimo de 8 caracteres.
+	\item Utilización de caracteres alfanuméricos.
+	\item Caducidad de las contraseñas a los 2 meses.
+	\item Máximo de 3 intentos de acceso. En el caso de fallar 3 veces se bloquea el usuario y se debe contactar con el Administrador de Sistemas para resetear el usuario.
+\end{itemize}
 
 \section{Registro de accesos}
 
