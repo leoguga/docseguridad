@@ -61,10 +61,23 @@ A los efectos de esta política, se establecen tres niveles de autorización para 
 \end{itemize}
 
 En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de personal está autorizado para la lectura, realización o modificación de dichos ficheros. Esta tabla no incluye los privilegios especiales otorgados en la sección 1.4, que deberán ser tenidos también en cuenta a la hora del diseño de los privilegios de acceso individuales.
-\paragraph{}
-\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm} |p{3cm}|}
- \hline
- Personal autorizado & Básico & Agregado & Privilegiado \\ \hline
+
+\begin{center}
+\tablefirsthead{%
+\hline
+\textbf{Personal autorizado} & \textbf{Básico} & \textbf{Agregado} & \textbf{Privilegiado} \\
+\hline}
+\tablehead{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa de la página anterior}\\
+\hline}
+\tabletail{%
+\hline
+\multicolumn{4}{|l|}{\small\sl Continúa en la siguiente página}\\
+\hline}
+\tablelasttail{\hline}
+\bottomcaption{Aplicaciones}
+\begin{supertabular}{|p{3.4cm}|p{3.2cm}|p{3.2cm} |p{3.2cm}|}
  Fichero de personal &  Adm. de Personal &  & Director de Administración, Jefe de Personal \\ \hline
  Fichero de proveedores & Adm. de Logística & Inspector de Mantenimiento, Jefe de Logística  & Director de Administración \\ \hline
  Fichero de clientes & Adm. Ventas, Comerciales Ventas, Adm. Terminados & Jefe de Ventas, Jefe de Marketing, Comerciales de Marketing, Jefe Productos Terminados & Director Comercial \\ \hline
@@ -72,7 +85,7 @@ En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de 
  Fichero de producción & Tecnicos Laboratorio, Capataces, Operarios  & Inspector Calidad, Coordinador Producción, Jefes en Dirección de Producción & Director Producción \\ \hline
  Fichero de informes & Directores &  & Miembros de MI \\ \hline
 \end{supertabular}
-
+\end{center}
 
 
 
