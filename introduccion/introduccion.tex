@@ -1,55 +1,35 @@
-\emph{Nota del profesor:} este guión es únicamente
-  orientativo, y no se obliga a seguir este mismo orden y división en
-  secciones ni a utilizar \LaTeX. Sin embargo, se recomienda que el
-  formato usado, sea cual sea, contenga la información recogida en
-  este esquema. Es posible que no todo sea necesario, particularmente
-  en organizaciones de menor tamaño.
-
-  Se recomienda hacer referencia y seguir las recomendaciones de las
-  normas UNE-ISO/IEC 27002:2009 ~\cite{une27002}, UNE-ISO/IEC
-  27001~\cite{une27001} (disponible a través de NORWEB
-  en \url{biblioteca.uca.es}), UNE 71501~\cite{une71501} y el resto
-  del material del Campus Virtual. En particular, la norma UNE 71501-3
-  da ciertas guías sobre el contenido que debería tener una política
-  de seguridad de TI de una organización.
-
 \section{Descripción de la Organización}
-
-\begin{center}\begin{tiny}
-\textbf{Nombre de la organización, a qué se dedica, de qué activos (a alto
-nivel: locales, edificios, etc.) dispone, cuál es su organigrama, etc.}
-\end{tiny}
-\end{center}
 
 La organización para la que se diseña esta política de seguridad de denomina \laorganizacion
 
 \paragraph{}
 
-\laorganizacion \ se dedica a la producción y comercialización de vinos y brandis dentro de la zona de producción y crianza conocida como \emph{Marco de Jerez}. Para ello, utiliza los métodos tradicionales de producción del Marco, estando adherida a todos los estándares de calidad requeridos por el \emph{Consejo Regulador de la Denominación de Origen Jeréz-Xérès-Sherry}.
+\laorganizacion \ se dedica a la producción y comercialización de vinos y brandis dentro de la zona de producción y crianza conocida como \emph{Marco de Jerez}. Para ello, utiliza los métodos tradicionales de producción del Marco, estando adherida a todos los estándares de calidad requeridos por el \emph{Consejo Regulador de la Denominación de Origen Jeréz-Xérès-Sherry}, establecidos en el Anexo II de la consejería de Agricultura y pesca del 13 de mayo de 2010\cite{BOJA:2010:103}.
 
 \subsection{Estructura organizativa de la compañía}
 \label{sec:EstructuraOrganizativaDeLaCompañía}
 
-\subsubsection{Los Directorados}
+\subsubsection{Las Direcciones}
 \label{sec:LosDirectorados}
 
-La organización de la empresa se sustenta en una estructura de directorados y departamentos. El Director General y el resto de los Directores constituyen el Comité de Dirección ejecutiva, que se reúne quincenalmente.
+La organización de la empresa se sustenta en una estructura de direcciones y departamentos. El Director General y el resto de los Directores constituyen el Comité de Dirección ejecutiva, que se reúne quincenalmente.
 
 \paragraph{}
 
-Los directorados son los siguientes:
+Las direcciones son los siguientes, como se puede ver en la figura 1.1:
 
 \begin{itemize}
 \item Dirección de Administración.
 \item Dirección Comercial.
 \item Dirección de Producción.
-\item Dirección de IM/IT.
+\item Dirección de GI/TI (Gestión de la Información y Tecnologías de la información).
 \item Dirección Financiera.
 
 
 \end{itemize}
 
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -71,7 +51,7 @@ Los directorados son los siguientes:
     ]
 %% Draw events and edges
 
-\node [event] {Director general}
+\node [event] {Director General}
 child
 {
 	node {Director \\de Administración}
@@ -86,7 +66,7 @@ child
 }
 child
 {
-	node {Director de IM/IT}
+	node {Director de GI/TI}
 }
 child
 {
@@ -94,10 +74,11 @@ child
 };
 
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de Direcciones de la Empresa}
+\end{figure}
 
 \paragraph{}
-Las funciones de los directorados y sus departamentos, se detallan en los siguientes apartados.
+Las funciones de las direcciones y sus departamentos, se detallan en los siguientes apartados.
 
 
 
@@ -105,7 +86,7 @@ Las funciones de los directorados y sus departamentos, se detallan en los siguie
 \subsubsection{Dirección de Administración}
 \label{sec:DirecciónDeAdministración}
 
-La dirección de administración se ocupa de los asuntos relativos al personal de la empresa, y a la logística de compras y mantenimiento de las instalaciones.
+La dirección de administración se ocupa de los asuntos relativos al personal de la empresa, y a la logística de compras y mantenimiento de las instalaciones. La figura 1.2 muestra el organigrama.
 
 \paragraph{}
 Se divide en dos departamentos: \emph{Personal} y \emph{Logística}.
@@ -130,7 +111,8 @@ El \emph{departamento de logística} tiene un jefe,varios administrativos, y un i
 \end{itemize}
 
  
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -152,7 +134,7 @@ El \emph{departamento de logística} tiene un jefe,varios administrativos, y un i
     ]
 %% Draw events and edges
 
-\node  [event] {Director \\de Administración}
+\node  [event] [text width=6cm] {Director de Administración}
 child
 {
 	node  {Jefe Depto. de Personal}
@@ -175,11 +157,12 @@ child
 };
 
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de la Dirección de Administración}
+\end{figure}
 
 
 \subsubsection{Dirección Comercial}
-La Dirección Comercial es responsable de planear y ejecutar la estrategia de ventas de la empresa. La encabeza el Director comercial, y tiene tres departamentos: el Departamento de Ventas, el departamento de Márketing, y el almacén de productos terminados.
+La Dirección Comercial es responsable de planear y ejecutar la estrategia de ventas de la empresa. La encabeza el Director comercial, y tiene tres departamentos: el Departamento de Ventas, el departamento de Márketing, y el almacén de productos terminados.La figura 1.2 muestra el organigrama.
 
 \begin{itemize}
 	\item El \textbf{departamento de ventas} se encarga de la captación de clientes y pedidos de ventas. Se trata de un equipo de vendedores y administrativos. Las exportaciones son manejadas por una empresa intermediaria, por lo que esta compañía no tiene relaciones con el extranjero. Los clientes de la compañía son de los siguientes tipos:
@@ -198,7 +181,8 @@ La Dirección Comercial es responsable de planear y ejecutar la estrategia de ven
 	\end{itemize}
 \end{itemize}
 
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -255,13 +239,14 @@ child
 };
 
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de la Dirección Comercial}
+\end{figure}
 
 
 \subsubsection{Dirección de Producción}
-La dirección de producción se encarga de la fabricación de los productos que la compañía tiene a la venta, siguiendo los procedmimentos establecidos por los comités técnicos, y cumpliendo con la normativa vigente de salud pública y protección al consumidor. 
+La dirección de producción se encarga de la fabricación de los productos que la compañía tiene a la venta, siguiendo los procedmimentos establecidos por los comités técnicos, y cumpliendo con la normativa vigente de salud pública y protección al consumidor. Puede ver el organigrama en las figuras 1.4 y 1.5.
 
-Este directorado tiene tres departamentos: Control de Calidad, Viñas, Planta de Molturación y Mostos, Envejecimiento, y Embotellado. 
+Esta dirección tiene tres departamentos: Control de Calidad, Viñas, Planta de Molturación y Mostos, Envejecimiento, y Embotellado. 
 
 \begin{itemize}
 	\item El \textbf{Departamento de Control de Calidad} se encarga de la realización de las pruebas y cálculos pertinentes para asegurarse de que los productos terminados e intermedios que se están fabricando se realizan según los procedimientos estipulados, de que sus propiedades cumplen los niveles de calidad acordes a su categoría. Lo componen un Jefe de Control de Calidad, y varios técnicos de laboratorio.
@@ -277,7 +262,8 @@ Este directorado tiene tres departamentos: Control de Calidad, Viñas, Planta de 
 \end{itemize}
 	
 	
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -299,7 +285,7 @@ Este directorado tiene tres departamentos: Control de Calidad, Viñas, Planta de 
     ]
 %% Draw events and edges
 
-\node [event] {Director de producción (1/2)}
+\node [event] [text width=2.6cm] {Director de producción (a)}
 child
 {
 	node {Jefe de Dpto. Control de Calidad}
@@ -322,9 +308,11 @@ child
 };
 
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de la Dirección de Producción (a)}
+\end{figure}
 
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -346,7 +334,7 @@ child
     ]
 %% Draw events and edges
 
-\node [event] {Director de producción (2/2)}
+\node [event] [text width=2.6cm] {Director de producción (b)}
 child
 {
 	node  {Jefe de Mostos y Holandas}
@@ -384,22 +372,23 @@ child
 	}
 };
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de la Dirección de Producción (b)}
+\end{figure}
 
-\subsubsection{Dirección de IM/IT}
-Esta compañía le da mucha importancia estratégica al flujo de datos e información de la empresa, y ha decidido que el área de IM/IT va a tener un directorado.
+\subsubsection{Dirección de GI/TI}
+Esta compañía le da mucha importancia estratégica al flujo de datos e información de la empresa, y ha decidido que el área de GI/TI va a tener una dirección. La figura 1.6 muestra su organigrama.
 
-Este directorado consta de dos depatamentos: IT (Information Technology) e IM (Informacion Management).
+Esta dirección consta de dos depatamentos: TI (Tecnología de la Información) e GI (Gestión de la Información).
 
 \begin{itemize}
-	\item El departamento de IT está compuesto de un administrador de redes, un administrador de servidores de aplicaciones y datos, dos técnicos de mantenimiento de equipos, y un especialista en seguridad informática. Las funciones de este departamento son:
+	\item El departamento de TI está compuesto de un administrador de redes, un administrador de servidores de aplicaciones y datos, dos técnicos de mantenimiento de equipos, y un especialista en seguridad informática. Las funciones de este departamento son:
 	\begin{itemize} 
 	\item Instalación, mantenimiento y administración de la infraestructura de red, servidores y comunicaciones de la organización.
 	\item Instalación, mantenimiento y administración de dispositivos finales (Computadoras, teléfonos móviles, etc.), y su correcta configuración según los servicios requeridos para el tipo de usuario.
 	\item Contratación de servicios externos para la instalación de infraestructura llegado el caso.
 	\item Inspección continua de seguridad de la infraestructura de sistemas de información de la empresa.
 	\end{itemize}
-	\item El departamento de IM está compuesto por un Jefe de IM, y dos programadores, que cumplen las siguientes funciones:
+	\item El departamento de GI está compuesto por un Jefe de GI, y dos programadores, que cumplen las siguientes funciones:
 	
 	\begin{itemize}
 	\item Análisis continuado de los procesos de negocio de la empresa, y búsqueda de las herramientas de información adecuadas para la mejora continua de dichos procesos.
@@ -410,7 +399,8 @@ Este directorado consta de dos depatamentos: IT (Information Technology) e IM (I
 	
 \end{itemize}
 
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -432,17 +422,17 @@ Este directorado consta de dos depatamentos: IT (Information Technology) e IM (I
     ]
 %% Draw events and edges
 
-\node (g1) [event] {Director de IM/IT}
+\node (g1) [event] {Director de GI/TI}
 child
 {
-	node (g2) {Jefe de IT}
+	node (g2) {Jefe de TI}
 	child
 	{
-		node (g3) {Administrador de la red}	
+		node (g3) {Administrador de la Red}	
 	}
 	child
 	{
-			node (g4) {Administrador de servidores de datos y aplicaciones}
+			node (g4) {Administrador de Sistemas (DBA/Otros)}
 	}
 	child
 	{
@@ -450,12 +440,12 @@ child
 	}
 	child
 	{
-		node (t2) {Especialista en seguridad}
+		node (t2) {Reponsable de seguridad}
 	}
 }
 child [level distance=4.5cm]
 {
-	node (g5) {Jefe de IM}
+	node (g5) {Jefe de GI}
 	child [level distance=1.4cm]
 	{
 		node (t3) {Programadores}
@@ -463,7 +453,8 @@ child [level distance=4.5cm]
 };
 
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de la Dirección de GI/TI}
+\end{figure}
 
 \subsubsection{Dirección Financiera}
 El \textbf{Director Financiero} es responsable de las siguientes funciones:
@@ -474,7 +465,7 @@ El \textbf{Director Financiero} es responsable de las siguientes funciones:
 \item Avisar a la Dirección de la Empresa de las desviaciones sobre presupuestos financieros y/o de gastos, que pudieran alterar la consecución de objetivos estratégicos de la compañía.
 \end{itemize}
 
-Para ello, el directorado se divide en dos departamentos: uno de \textbf{contabilidad}, y otro de \textbf{Comptroller}.
+Para ello, la dirección se divide en dos departamentos: uno de \textbf{contabilidad}, y otro de \textbf{Comptroller}, como se puede observar en la figura 1.7
 
 \begin{itemize}
 \item El \emph{departamento de contabilidad} se ocupa de la correcta contabilización de los documentos contables de la empresa, de su custodia según lo estipula la ley, y del cumplimiento de las obligaciones con las haciendas locales y estatales,y del análisis de costes.
@@ -482,7 +473,8 @@ Para ello, el directorado se divide en dos departamentos: uno de \textbf{contabi
 \end{itemize}
 
   
-\begin{center}
+\begin{figure}
+    \centering
 \begin{tikzpicture}[
 % Label style
     label distance=3mm,
@@ -523,37 +515,52 @@ child
 };
 
 \end{tikzpicture}
-\end{center}
+\caption{Organigrama de la Dirección Financiera}
+\end{figure}
 
 \section{Objetivos y alcance de la política}
 
-Aquí se indica qué nivel de seguridad se desea obtener, y se
-relacionan con los objetivos de la organización. Hay que además
-limitar el alcance de la polática, para evitar cubrir demasiado
-terreno, que puede exigir demasiado tiempo.
+El objetivo principal de esta política de seguridad es definir y delimitar responsabilidades para las diversas actuaciones técnicas y organizativas que se requieran referidas a la seguridad de los sistemas informáticos. Esta política describe una serie de procedimientos de seguridad que describen cuáles son las actividades que habrían de realizarse en el sistema, en qué momento o lugar, quiénes son los responsables de su ejecución y cuáles son los controles aplicables para supervisar su correcta aplicación.
 
+\paragraph{}
+La política establecida es de obligado cumplimiento para todos los estamentos de la organización: Dirección General, Dirección Administrativa, Dirección de Producción, Dirección Financiera, Dirección Comercial y Dirección de GI/TI.
+
+\paragraph{}
+La política comprende los siguientes aspectos:
+\begin{itemize}
+\item Seguridad de la información tratada por la organización, ya sea de carácter personal o relativa a los proyectos desarrollados en la organización.
+\item Seguridad de equipos y elementos físicos.
+\item Control de personal interno y subcontratado.
+\item Seguridad del Hardware y Software.
+\item Seguridad en las comunicaciones.
+\item Continuidad del Negocio.
+\end{itemize}
 \section{Gestión y cambios de la política}
-Una política de seguridad no es algo estático, sino que se va
-revisando continuamente. Habrá que describir la forma en que se
-recogen las propuestas de cambio, se realizan los cambios pertinentes
-y se difunde de nuevo al resto del personal la última versión de la
-política, de forma clara e inequívoca.
-
-
+La política de seguridad se revisa anualmente en una reunión del Comité de Dirección Ejecutiva junto con el Responsable de Seguridad de la empresa. Estas revisiones tienen como objetivo adaptar la política a las nuevas exigencias de la organización y del entorno tecnológico y legal. Los cambios en la política sólo pueden ser propuestos por alguno de los miembros del comité y/o del responsable de seguridad, y su aprobación se realizará por mayoría de tres quintos en la fecha anual prevista para su revisión.
+\paragraph{}
+Cuando los cambios realizados en la política derivan en cambios procedimentales en la organización, la Dirección de \laorganizacion \ deberá informar a los departamentos afectados en un plazo inferior a una semana. En caso necesario, se realizarán cursos de formación dentro del horario laboral y se elaborará documentación informativa para los miembros del personal. Cuando los cambios afectan a todos los miembros de la empresa, además de los procedimientos anteriores, se publicará una noticia en la página web de la intranet corporativa, se enviará un correo electrónico a la cuenta de todos los empleados que la posean, y se publicará en los tablones informativos de todos los edificios de la compañía. 
 
 \section{Organización de la Seguridad}
 
-En esta sección se describe cómo se va a organizar la gestión de la
-seguridad en la organización a lo largo de todo su
-organigrama. Deberáa tenerse en cuenta a todos los departamentos, y no
-sólo al de Informática.
+\laorganizacion \ se divide en 6 áreas principales (ver figura 1.1):
+\begin{itemize}
 
-Hay que definir responsabilidades y gestión de los informes de las
-incidencias. También se deberáan definir a alto nivel los mecanismos
-que se usarían para comprobar que se llevan a cabo las medidas
-indicadas en este documento.
+\item\textbf{Dirección}. Esta área se compone únicamente del Director de la empresa. El Director tiene acceso a toda la información de la empresa además de a todos los sistemas informáticos. El responsable de Seguridad de la Empresa ha de asegurarse de que en cualquier momento, el Director puede ejercer esta potestad.
 
-En este apartado se deberáan tener en cuenta las medidas explicadas en
-<<Seguridad en el entorno>> para limitar el riesgo por ataques
-internos, tomando en cuenta la matriz de peligrosidad mostrada en las
-transparencias.
+\item\textbf{Dirección de Administración}. Para poder efectuar sus funciones, el Director de Administración tiene acceso privilegiado al archivo de personal y de proveedores, y acceso de lectura a los archivos pertinentes del cuadro de mandos (Dashboard) del fichero de informes de la empresa.
+
+\item\textbf{Dirección Comercial}. Para poder efectuar sus funciones, el Director Comercial tiene acceso privilegiado al archivo de proveedores y de clientes, y acceso de lectura a los archivos pertinentes del cuadro de mandos (Dashboard) y la estructura de informes de dirección del fichero de informes de la empresa.
+
+\item\textbf{Dirección de producción}. Para poder efectuar sus funciones, el Director Comercial tiene acceso privilegiado al archivo de producción, y acceso de lectura a los archivos pertinentes del cuadro de mandos (Dashboard) y la estructura de informes de dirección del fichero de informes de la empresa.
+
+\item\textbf{Dirección de GI/TI}. Al igual que el Director General, el Director de GI/TI tiene acceso a todos los sistemas informáticos. El responsable de seguridad la información de la Empresa ha de asegurarse de que en cualquier momento, el Director de GI/TI pueda ejercer esta potestad. Con respecto a la información, únicamente no tendrá acceso a aquella que esté clasificada como confidencial por el Director General.
+
+\item\textbf{Dirección financiera}. Para poder efectuar sus funciones, el Director Financiero tiene acceso agregado al archivo de producción, de proveedores y de clientes. También tiene acceso privilegiado al archivo financiero, y acceso de lectura a los archivos pertinentes del cuadro de mandos (Dashboard) y la estructura de informes de dirección del fichero de informes de la empresa.
+
+\end{itemize}
+\paragraph{}
+Los directores son responsables de coordinar con el responsables de seguridad de la información y el administrador de sistemas, los privilegios de los que va a disfrutar cada miembro de la organización, dependiendo de qué funciones realicen en cada momento dentro de la compañía, y siguiendo siempre el principio del menor nivel de acceso necesario para el desempeño de su trabajo, tomando como guía lo estipulado en el apartado 2.1.1 Personal autorizado en los ficheros.
+\paragraph{}
+Los administradores de sistemas son responsables del correcto depliegue de los controles de seguridad para los distintos sistemas de la empresa, y en lo relativo a la seguridad de los sistemas, han se seguir las guías, normas, especificaciones, y órdenes producidas por el responsable de seguridad de la información la compañía. No obstante, la continuidad del negocio y la efectiva asignación de recursos de la empresa es también importante para la compañía, por lo que un administrador de sistemas está obligado a notificar al Director de GI/TI cuando considere fundadamente que la aplicación de cierta norma de seguridad pudiera afectar a alguno de estos aspectos mencionados. En todo caso, el criterio del Director de GI/TI prevalecerá sobre el administrador de sistemas y el del responsable de seguridad.
+\paragraph{}
+Los Administradores de Sistemas efectuarán el despliegue de procedimientos de auditorías, que serán analizados periódicamente por el reponsable de seguridad, y éste último informará trimestralmente al director de GI/TI de los eventos producidos en ese espacio de tiempo para que tomen las medidas pertinentes.
