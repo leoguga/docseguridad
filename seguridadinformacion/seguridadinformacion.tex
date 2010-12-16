@@ -49,18 +49,30 @@ que se pueden acabar representando como dashboards, etc. Estos informes y los da
 
 \subsection{Personal autorizado en los ficheros}
 
-En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de personal está autorizado para la lectura, realización o modificación de dichos ficheros:
+A los efectos de esta política, se establecen tres niveles de autorización para el acceso a los ficheros: Básico, Agregado y Privilegiado. El Responsable de Seguridad, junto con el Director de GI/TI, contando con el asesoramiento técnico de los administradores de sistemas, deberán interpretar la mejor correspondencia entre la definición de estos niveles políticos, y los niveles de seguridad ofrecidos por los distintos sistemas que sirvan de soporte de acceso a los datos. 
 
-\begin{tabular}{ | l | l | l | l |}
+\begin{itemize}
+	\item El \textbf{nivel básico} consiste en la lectura y/o modificación de registros individuales de los sistemas, con una capacidad muy básica de búsqueda, restringida al dominio de los pasos del proceso de negocio en el que el miembro se ve involucrado. Por ejemplo, un administrativo de personal recibiría acceso de búsqueda por persona de los registros individuales de nóminas, vacaciones, expedientes, o cualificaciones de personas individuales.
+	
+	\item El \textbf{nivel agregado} consiste en el acceso a informes que realicen algún tipo de cálculo estadístico sobre los datos, o de listas de items que la persona pudiera utilizar para la realización de dichos cálculos por su cuenta. El nivel agregado implica nivel básico.
+	
+	\item El \textbf{nivel privilegiado} consiste en tener en acceso a toda la información que pueda producir un sistema, o acceso a los datos en formato original (por ejemplo, acceso directo a la base de datos que hay detrás de un sistema), o tener privilegios para ótorgar accesos a otros miembros. El nivel privilegiado implica nivel agregado.
+	
+\end{itemize}
+
+En la siguiente tabla se clasifica para cada fichero de la empresa, qué tipo de personal está autorizado para la lectura, realización o modificación de dichos ficheros. Esta tabla no incluye los privilegios especiales otorgados en la sección 1.4, que deberán ser tenidos también en cuenta a la hora del diseño de los privilegios de acceso individuales.
+\paragraph{}
+\begin{supertabular}{|p{3cm}|p{3cm}|p{3cm} |p{3cm}|}
  \hline
- Nombre / Personal autorizado & Básico & Agregado & Privilegiado \\ \hline
- Fichero de personal &  &  &  \\ \hline
- Fichero de proveedores &  &  &  \\ \hline
- Fichero de clientes &  &  &  \\ \hline
- Fichero financiero &  &  &  \\ \hline
- Fichero de producción &  &  &  \\ \hline
- Fichero de informes &  &  &  \\ \hline
-\end{tabular}
+ Personal autorizado & Básico & Agregado & Privilegiado \\ \hline
+ Fichero de personal &  Adm. de Personal &  & Director de Administración, Jefe de Personal \\ \hline
+ Fichero de proveedores & Adm. de Logística & Inspector de Mantenimiento, Jefe de Logística  & Director de Administración \\ \hline
+ Fichero de clientes & Adm. Ventas, Comerciales Ventas, Adm. Terminados & Jefe de Ventas, Jefe de Marketing, Comerciales de Marketing, Jefe Productos Terminados & Director Comercial \\ \hline
+ Fichero financiero &  Contables &  Jefe Contabilidad, Comptroller & Director Financiero \\ \hline
+ Fichero de producción & Tecnicos Laboratorio, Capataces, Operarios  & Inspector Calidad, Coordinador Producción, Jefes en Dirección de Producción & Director Producción \\ \hline
+ Fichero de informes & Directores &  & Miembros de MI \\ \hline
+\end{supertabular}
+
 
 
 
@@ -124,11 +136,11 @@ En este punto, inicialmente se clasifican los tipos de activos, tipos de amenaza
 \tablelasttail{\hline}
 \bottomcaption{Datos/Información}
 \begin{supertabular}{|p{3cm}|p{7cm}|}
-	[vr] & Datos vitales \\
+	[vr] & Datos vitales: Fichero Financiero, Fichero de Producción \\
 	\hline
-	[com] & Datos de interés comercial \\
+	[com] & Datos de interés comercial: Fichero Comercial y de Proveedores \\
 	\hline
-	[int] & Datos de gestión interna \\
+	[int] & Datos de gestión interna: Fichero de Personal y de Informes \\
 	\hline
 	[source] & Código fuente \\
 	\hline
