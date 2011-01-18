@@ -195,7 +195,7 @@ y el resto para la fecha en que se ha realizado la copia, también debidamente e
 La salida de soportes informáticos que contengan datos de carácter personal, fuera de los locales en donde esté ubicado el sistema de información, únicamente puede ser autorizada por el responsable del fichero o aquel en que se hubiera delegado de acuerdo al siguiente procedimiento: \\
 La autorización deberá ser aprobada por el Director de GI/TI -o el Jefe de TI si está delegado a hacerlo en su defecto-. Esta deberá indicar el soporte en cuestión, la finalidad y destino, la forma de envío y la persona que autoriza.
 
-En el Anexo C se incluirán los documentos de autorización relativos a la salida de soportes que contengan datos personales.
+En el Anexo C se incluirán los documentos de autorización relativos a la salida de soportes que contengan datos personales. Asimismo, el Anexo D provee el formulario a rellenar cuando se da de alta o baja a un soporte, para el control y gestión de los mismos.
 
 
 \item Acceso a datos a través de redes de comunicaciones
@@ -273,7 +273,7 @@ Además, debe asegurar el buen funcionamiento de copias, almacenado y transporte
 
 Se considerarán como "incidencias de seguridad", entre otras, cualquier incumplimiento de la normativa desarrollada en este Documento de Seguridad, así como a cualquier anomalía que afecte o pueda afectar a la seguridad de los datos de carácter personal.
 
-El procedimiento a seguir para la notificación de incidencias será: \\
+El procedimiento a seguir para la notificación de incidencias será:
 
 Cuando ocurra una incidencia, el usuario o administrador deberá registrarla en el Libro de Incidencias o comunicarla al Responsable de Seguridad para que a su vez proceda a su registro.
 
@@ -302,15 +302,17 @@ En el Anexo C se incluirán los documentos de autorización por parte del respon
 \begin{itemize}
 \item Revisión del Documento de Seguridad.
 
-< Especificar los procedimientos previstos para la modificación del documento de seguridad, con especificación concreta de las personas que pueden o deben proponerlos y aprobarlos, así como para la comunicación de las modificaciones al personal que pueda verse afectado.
-El documento deberá mantenerse en todo momento actualizado y deberá ser revisado siempre que se produzcan cambios relevantes en el sistema de información o en la organización del mismo. Asimismo, deberá adecuarse, en todo momento, a las disposiciones vigentes en materia de seguridad de los datos de carácter personal >
+El responsable de seguridad es la única persona con capacidad para efectuar cambios en el presente documento, siendo su responsabilidad comunicárselo al resto de usuarios autorizados en caso necesario.
+
+El documento deberá mantenerse en todo momento actualizado y deberá ser revisado siempre que se produzcan cambios relevantes en el sistema de información o en la organización del mismo o con mínimo de 3 meses desde la última revisión. Asimismo, deberá adecuarse, en todo momento, a las disposiciones vigentes en materia de seguridad de los datos de carácter personal.
+
 
 \end{itemize}
 
 
 \chapter{Consecuencias del incumplimiento del Documento de Seguridad}
 
-El incumplimiento de las obligaciones y medidas de seguridad establecidas en el presente documento por el personal afectado, se sancionará conforme a <indicar la normativa sancionadora aplicable>
+El incumplimiento de las obligaciones y medidas de seguridad establecidas en el presente documento por el personal afectado, se sancionará conforme a la normativa de la ley Orgánica 15/1999.
 
 
 
@@ -329,53 +331,126 @@ Actualizado a: \today
 
 \item Unidad/es con acceso al fichero o tratamiento: Director de Administración, Jefe de Personal y Administradores de Personal.
 
-\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: <rellenar los siguientes campos con los datos relativos a la inscripción del fichero en el Registro General de Protección de Datos (RPGD)>
+\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos:
+
 	\begin{itemize}
-	\item Identificador: <código de inscripción>
-	\item Nombre: <nombre inscrito>
-	\item Descripción: <descripción inscrita>
+	\item Identificador: 111111111
+	\item Nombre: Personal de \laorganizacion
+	\item Descripción: Datos personales del personal de la empresa, así como los datos correspondientes a las nóminas.
 	\end{itemize}
 
 \item Nivel de medidas de seguridad a adoptar: básico.
 
 \item Administrador: Administrador del Sistema.
 
-\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento <si existen>
+\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento: ley Orgánica 15/1999.
 
-\item Código Tipo Aplicable: <se indicará aquí si el fichero esta incluido en el ámbito de alguno de los códigos tipo regulados por el articulo 32 de la LOPD>.
+\item Código Tipo Aplicable: No figura.
 
-\item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
+\item Estructura del fichero principal: 
 
-\item Información sobre el fichero o tratamiento
+\begin{itemize}
+\item Nombre
+\item Primer apellido
+\item Segundo apellido
+\item Tipo de Documento
+\item Número de documento
+\item Sexo
+\item Fecha de nacimiento
+\item Nacionalidad
+\item Dirección
+\item Ciudad
+\item Código Postal
+\item Fecha alta
+\item Fecha baja
+\item Nombre de usuario
+\item Contraseña
+\item Cargo
+\item Correo electrónico
+\item Teléfono 1
+\item Teléfono 2
+\item Tipo de contrato
+\item Salario
+\item Curriculum
+\end{itemize}
+
+
+\item Información sobre el fichero o tratamiento:
 	\begin{itemize}
-	\item Finalidad y usos previstos:
-	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales:
-	\item Cesiones previstas:
-	\item Transferencias Internacionales: <relacionar las transferencias internacionales, especificando si ha sido necesaria la autorización del Director de la Agencia Española de Protección de Datos>
-	\item Procedencia de los datos: <indicar quien suministra los datos>
-	\item Procedimiento de recogida: <encuestas, formularios en papel, Internet, ...>
-	\item Soporte utilizado para la recogida de datos: <papel, informático, telemático, ...>
+	\item Finalidad y usos previstos: Gestión del personal de la organización y sus nóminas.
+	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales: Trabajadores de la empresa.
+	\item Cesiones previstas: Ninguna.
+	\item Transferencias Internacionales: No están previstas.
+	\item Procedencia de los datos: Personal de la empresa.
+	\item Procedimiento de recogida: Encuesta.
+	\item Soporte utilizado para la recogida de datos: Informático.
 	\end{itemize}
 
-\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: <indicar la unidad y/o dirección. Deben preverse además, los procedimientos internos para responder a las solicitudes de ejercicio de derechos de los interesados>
+\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
 \item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
 
-\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación <En el caso de sistemas automatizados. Especificar la periodicidad de las copias (que debe ser al menos semanal). Si se trata de ficheros manuales y tienen prevista alguna medida en este sentido, detallarla>.
+\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
-\item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
+Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. 
 
-\item Funciones del personal con acceso a los datos personales: <Especificar las diferentes funciones y obligaciones de cada una de las personas con acceso a los datos de carácter personal y sistema de información específicos de este fichero>.
+Se citan a continuación, extraido del documento nombrado, las secciones oportunas correspondientes:
 
-\item Descripción de los procedimientos de control de acceso e identificación: <Cuando sean específicos para el fichero>.
+\begin{itemize}
+\item Tipos de copias y frecuencia
+
+"Se realizarán dos tipos de copias de seguridad, cada uno con un fin distinto: 
+
+\begin{itemize}
+\item Diferenciales: Realizaremos copias diferenciales diariamente, de manera que obtendremos una cinta al día con los datos modificados desde la última copia completa que se haya realizado. 
+
+\item Completas: Se realizarán distinto tipos de copias completas:
+
+	\begin{itemize}
+	\item Semanales: Cada semana se realizará una copia completa de los datos de esos siete días. Es decir, al cabo de 4 semanas, se habría obtenido una cinta con los nuevos datos generados o modificados de cada semana.
+	\item Mensuales: Al finalizar cada més se realizará una copia completa de los datos del sistema.
+	\end{itemize}
+
+\end{itemize}
+
+La razón por la que se realiza la copia completa semanal es para evitar que la copia diaria diferencial llegue a ser suficientemente grande, y así el tiempo de realización de la copia no crezca excesivamente. La diferencia de hacer la copia semanal completa y hacer una diferencial más reside en que el siguiente día las copias diferenciales empezarán a hacerse desde esta última copia, por lo que la cantidad de datos que almacenarán no será nunca superior a la de 6 días de modificación o creación de los mismos.
+
+Dichas copias automatizadas se realizarán en un horario en el que no se esté haciendo uso de las instalaciones, para evitar en medida de lo posible que se estén manejando datos al mismo tiempo que se realiza la copia, por lo que sería una opción lógica que se realicen en horario nocturno. Concretamente, se realizarán a las 4:00, a menos que se realice alguna labor de mantenimiento nocturna puntual a dicha hora; en este caso, el responsable de la programación de las copias de seguridad asignará una nueva hora de acuerdo al horario de mantenimiento estimado.
+
+Para mayor seguridad y confidencialidad, los backups se realizarán cifrando la información, de manera que si fuese necesario una recuperación de los datos, el mismo software de cifrado desencriptaría los datos para su correcta restauración en el sistema, sea este o no el encargado de realizar o leer las copias de seguridad con las que se trabajen.
+
+Por otra parte, el software encargado de la realización de las copias verificaría, una vez acabado el proceso, que el backup se ha realizado correctamente, sin ningún tipo de error, obteniéndose una copia fiable de los datos correspondientes."
+
+\item Recuperación de activos (\emph{Datos})
+
+"Si los daños sufridos han sido sobre los ficheros de datos, se podrían tomar varias acciones dependiendo del daño:
+
+	\begin{itemize}
+	\item Si han sido los datos actuales del sistema los que han sufrido el ataque, se tendría que llevar a cabo una restauración o recuperación de los mismos usando para ello las copias de seguridad que se han ido llevando a cabo regularmente, de acuerdo a lo redactado anteriormente. Si el ataque se ha dado durante el último mes, la recuperación de datos se podrá realizar de manera agilizada, ya que se tendría acceso casi inmediato a los datos, que se encontrarían en la sala destinada a ubicar estas copias, en el edificio de oficinas. Por lo que bastaría con recuperar la copia deseada y volcar el contenido en el sistema, recuperando la pérdida o modificación de datos que se ha sufrido.
+	\item En cambio, si los datos que han sido objeto del ataque son los backups, se habría de actuar de la manera opuesta. Es decir, si se han perdido o deteriorado las copias de seguridad, la recuperación de estas se haría simplemente realizando nuevas copias de los datos del sistema. Las nuevas copias sustituirían a las que han sufrido los daños, quedando almacenadas en el lugar correspondiente y sin afectar esto a la continua creación de copias de seguridad que debe seguir desarrollándose diariamente.
+	\item Si, desafortunadamente, tanto los datos actual del sistema como las copias de seguridad sufren daños, estaríamos ante un problema más serio. En este caso, la recuperación de los datos sería prácticamente imposible, a no ser que se haya perdido por borrado de memoria y se pueda usar un software de recuperación de datos eliminados. En otro caso, como incendio o inundación por ejemplo, no quedaría más remedio que recopilar de nuevo todos los datos perdidos mediante las mismas fuentes que se obtuvieron originalmente. Por este motivo se almacenan las copias mensuales completas en otro lugar físico, minimizando la posibilidad de que se pierdan los datos originales y las copias de ellos. Sería más probable que esto ocurriera con las copias diarias y semanales, pero la recuperación de estos datos sería más asequible que hacerlo de todos los datos de la empresa, ya que serían los datos modificados o creados dentro del último mes a lo sumo."
+	\end{itemize}
+
+\end{itemize}
+
+
+\item Información sobre conexión con otros sistemas: Guarda relación con el fichero financiero, el cual contabiliza, entre otras cosas, el pago de nóminas a los trabajadores de la empresa.
+
+\item Funciones del personal con acceso a los datos personales: Director de Administración, Jefe de Personal y Administradores de Personal.
+
+\item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
 \item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
 
 <Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
-\item Terceros que acceden a los datos para la prestación de un servicio: <Relacionar las empresas de mantenimiento, de servicios, etc., que tienen acceso a los datos. Cuando sea necesario realizar un contrato escrito según lo dispuesto en el artículo 12 de la LOPD, se incluirá una copia del mismo o de las cláusulas al efecto en el Anexo VI del documento>.
+\item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: <incluyendo fecha, resumen de aspectos modificados y motivo>
+\item Relación de actualizaciones de este Anexo: 
+
+	\begin{itemize}
+	\item Creación del anexo: \today
+	\end{itemize}
 
 \end{itemize}
 
@@ -395,53 +470,59 @@ Actualizado a: \today
 
 \item Unidad/es con acceso al fichero o tratamiento: Director de Administración, Jefe de Logística, Inspector de Mantenimiento y Administradores de Logística.
 
-\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: <rellenar los siguientes campos con los datos relativos a la inscripción del fichero en el Registro General de Protección de Datos (RPGD)>
+\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: 
 	\begin{itemize}
-	\item Identificador: <código de inscripción>
-	\item Nombre: <nombre inscrito>
-	\item Descripción: <descripción inscrita>
+	\item Identificador: 222222222
+	\item Nombre: Proveedores de \laorganizacion
+	\item Descripción: Datos de los proveedores, la información sobre la logística de la empresa y las facturas de las materias primas adquiridas y de su transporte, así como los albaranes.
 	\end{itemize}
 
 \item Nivel de medidas de seguridad a adoptar: básico.
 
 \item Administrador: Administrador del Sistema.
 
-\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento <si existen>
+\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento: ley Orgánica 15/1999.
 
-\item Código Tipo Aplicable: <se indicará aquí si el fichero esta incluido en el ámbito de alguno de los códigos tipo regulados por el articulo 32 de la LOPD>.
+\item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
-	\item Finalidad y usos previstos:
-	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales:
-	\item Cesiones previstas:
-	\item Transferencias Internacionales: <relacionar las transferencias internacionales, especificando si ha sido necesaria la autorización del Director de la Agencia Española de Protección de Datos>
-	\item Procedencia de los datos: <indicar quien suministra los datos>
-	\item Procedimiento de recogida: <encuestas, formularios en papel, Internet, ...>
-	\item Soporte utilizado para la recogida de datos: <papel, informático, telemático, ...>
+	\item Finalidad y usos previstos: Gestión de proovedores.
+	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales: Proveedores que tengan relación con la organización.
+	\item Cesiones previstas: Ninguna.
+	\item Transferencias Internacionales: No están previstas.
+	\item Procedencia de los datos: Proveedores.
+	\item Procedimiento de recogida: Formulario en papel.
+	\item Soporte utilizado para la recogida de datos: Papel inicialmente, con la informatización de los datos a posteriori.
 	\end{itemize}
 
-\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: <indicar la unidad y/o dirección. Deben preverse además, los procedimientos internos para responder a las solicitudes de ejercicio de derechos de los interesados>
+\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
 \item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
 
-\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación <En el caso de sistemas automatizados. Especificar la periodicidad de las copias (que debe ser al menos semanal). Si se trata de ficheros manuales y tienen prevista alguna medida en este sentido, detallarla>.
+\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
+
+Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
 \item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
 
-\item Funciones del personal con acceso a los datos personales: <Especificar las diferentes funciones y obligaciones de cada una de las personas con acceso a los datos de carácter personal y sistema de información específicos de este fichero>.
+\item Funciones del personal con acceso a los datos personales: Director de Administración, Jefe de Logística, Inspector de Mantenimiento y Administradores de Logística.
 
-\item Descripción de los procedimientos de control de acceso e identificación: <Cuando sean específicos para el fichero>.
+\item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
 \item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
 
 <Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
-\item Terceros que acceden a los datos para la prestación de un servicio: <Relacionar las empresas de mantenimiento, de servicios, etc., que tienen acceso a los datos. Cuando sea necesario realizar un contrato escrito según lo dispuesto en el artículo 12 de la LOPD, se incluirá una copia del mismo o de las cláusulas al efecto en el Anexo VI del documento>.
+\item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: <incluyendo fecha, resumen de aspectos modificados y motivo>
+\item Relación de actualizaciones de este Anexo: 
+
+	\begin{itemize}
+	\item Creación del anexo: \today
+	\end{itemize}
 
 \end{itemize}
 
@@ -460,53 +541,60 @@ Actualizado a: \today
 
 \item Unidad/es con acceso al fichero o tratamiento: Director Comercial, Jefe de Ventas, Jefe de Marketing, Comerciales de Marketing, Jefe de Productos Terminados, Administradores de Venta, Comerciales de Venta y Administradores de Terminados.
 
-\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: <rellenar los siguientes campos con los datos relativos a la inscripción del fichero en el Registro General de Protección de Datos (RPGD)>
+\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos:
 	\begin{itemize}
-	\item Identificador: <código de inscripción>
-	\item Nombre: <nombre inscrito>
-	\item Descripción: <descripción inscrita>
+	\item Identificador: 333333333
+	\item Nombre: Clientes de \laorganizacion
+	\item Descripción: Datos de los clientes, la gestión de pedidos, información sobre las ventas, la facturación y los albaranes correspondientes al transporte de mercancías.
 	\end{itemize}
 
 \item Nivel de medidas de seguridad a adoptar: básico.
 
 \item Administrador: Administrador del Sistema.
 
-\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento <si existen>
+\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento: ley Orgánica 15/1999.
 
-\item Código Tipo Aplicable: <se indicará aquí si el fichero esta incluido en el ámbito de alguno de los códigos tipo regulados por el articulo 32 de la LOPD>.
+\item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
-	\item Finalidad y usos previstos:
-	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales:
-	\item Cesiones previstas:
-	\item Transferencias Internacionales: <relacionar las transferencias internacionales, especificando si ha sido necesaria la autorización del Director de la Agencia Española de Protección de Datos>
-	\item Procedencia de los datos: <indicar quien suministra los datos>
-	\item Procedimiento de recogida: <encuestas, formularios en papel, Internet, ...>
-	\item Soporte utilizado para la recogida de datos: <papel, informático, telemático, ...>
+	\item Finalidad y usos previstos: Gestión de clientes.
+	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales: Clientes de la empresa.
+	\item Cesiones previstas: Ninguna.
+	\item Transferencias Internacionales: No están previstas.
+	\item Procedencia de los datos: Clientes.
+	\item Procedimiento de recogida: Encuesta.
+	\item Soporte utilizado para la recogida de datos: Informático.
 	\end{itemize}
 
-\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: <indicar la unidad y/o dirección. Deben preverse además, los procedimientos internos para responder a las solicitudes de ejercicio de derechos de los interesados>
+\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
 \item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
 
-\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación <En el caso de sistemas automatizados. Especificar la periodicidad de las copias (que debe ser al menos semanal). Si se trata de ficheros manuales y tienen prevista alguna medida en este sentido, detallarla>.
+\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
+
+Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
 \item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
 
-\item Funciones del personal con acceso a los datos personales: <Especificar las diferentes funciones y obligaciones de cada una de las personas con acceso a los datos de carácter personal y sistema de información específicos de este fichero>.
+\item Funciones del personal con acceso a los datos personales: Director Comercial, Jefe de Ventas, Jefe de Marketing, Comerciales de Marketing, Jefe de Productos Terminados, Administradores de Venta, Comerciales de Venta y Administradores de Terminados.
 
-\item Descripción de los procedimientos de control de acceso e identificación: <Cuando sean específicos para el fichero>.
+\item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
 \item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
 
 <Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
-\item Terceros que acceden a los datos para la prestación de un servicio: <Relacionar las empresas de mantenimiento, de servicios, etc., que tienen acceso a los datos. Cuando sea necesario realizar un contrato escrito según lo dispuesto en el artículo 12 de la LOPD, se incluirá una copia del mismo o de las cláusulas al efecto en el Anexo VI del documento>.
+\item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: <incluyendo fecha, resumen de aspectos modificados y motivo>
+
+\item Relación de actualizaciones de este Anexo: 
+
+	\begin{itemize}
+	\item Creación del anexo: \today
+	\end{itemize}
 
 \end{itemize}
 
@@ -526,53 +614,59 @@ Actualizado a: \today
 
 \item Unidad/es con acceso al fichero o tratamiento: Director Financiero, Jefe Contabilidad, Comptroller y Contables.
 
-\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: <rellenar los siguientes campos con los datos relativos a la inscripción del fichero en el Registro General de Protección de Datos (RPGD)>
+\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: 
 	\begin{itemize}
-	\item Identificador: <código de inscripción>
-	\item Nombre: <nombre inscrito>
-	\item Descripción: <descripción inscrita>
+	\item Identificador: 444444444
+	\item Nombre: Financias de \laorganizacion
+	\item Descripción: Información sobre los cobros, pagos, la contabilidad de la empresa, información sobre el IVA y los balances contables.
 	\end{itemize}
 
 \item Nivel de medidas de seguridad a adoptar: básico.
 
 \item Administrador: Administrador del Sistema.
 
-\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento <si existen>
+\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento: ley Orgánica 15/1999.
 
-\item Código Tipo Aplicable: <se indicará aquí si el fichero esta incluido en el ámbito de alguno de los códigos tipo regulados por el articulo 32 de la LOPD>.
+\item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
-	\item Finalidad y usos previstos:
-	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales:
-	\item Cesiones previstas:
-	\item Transferencias Internacionales: <relacionar las transferencias internacionales, especificando si ha sido necesaria la autorización del Director de la Agencia Española de Protección de Datos>
-	\item Procedencia de los datos: <indicar quien suministra los datos>
-	\item Procedimiento de recogida: <encuestas, formularios en papel, Internet, ...>
-	\item Soporte utilizado para la recogida de datos: <papel, informático, telemático, ...>
+	\item Finalidad y usos previstos: Gestión de las financias de la empresa.
+	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales: Ninguno.
+	\item Cesiones previstas: Ninguna.
+	\item Transferencias Internacionales: No están previstas.
+	\item Procedencia de los datos: Ventas, pagos, etc.
+	\item Procedimiento de recogida: Datos informatizados mediante el personal de la empresa durante la gestión de la misma.
+	\item Soporte utilizado para la recogida de datos: Informático.
 	\end{itemize}
 
-\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: <indicar la unidad y/o dirección. Deben preverse además, los procedimientos internos para responder a las solicitudes de ejercicio de derechos de los interesados>
+\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
 \item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
 
-\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación <En el caso de sistemas automatizados. Especificar la periodicidad de las copias (que debe ser al menos semanal). Si se trata de ficheros manuales y tienen prevista alguna medida en este sentido, detallarla>.
+\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
+
+Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
 \item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
 
-\item Funciones del personal con acceso a los datos personales: <Especificar las diferentes funciones y obligaciones de cada una de las personas con acceso a los datos de carácter personal y sistema de información específicos de este fichero>.
+\item Funciones del personal con acceso a los datos personales: Director Financiero, Jefe Contabilidad, Comptroller y Contables.
 
-\item Descripción de los procedimientos de control de acceso e identificación: <Cuando sean específicos para el fichero>.
+\item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
 \item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
 
 <Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
-\item Terceros que acceden a los datos para la prestación de un servicio: <Relacionar las empresas de mantenimiento, de servicios, etc., que tienen acceso a los datos. Cuando sea necesario realizar un contrato escrito según lo dispuesto en el artículo 12 de la LOPD, se incluirá una copia del mismo o de las cláusulas al efecto en el Anexo VI del documento>.
+\item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: <incluyendo fecha, resumen de aspectos modificados y motivo>
+\item Relación de actualizaciones de este Anexo: 
+
+	\begin{itemize}
+	\item Creación del anexo: \today
+	\end{itemize}
 
 \end{itemize}
 
@@ -593,53 +687,60 @@ Actualizado a: \today
 
 \item Unidad/es con acceso al fichero o tratamiento: Director de Producción, Jefes del Departamento de Producción, Coordinador de Producción, Inspector de Calidad, Técnicos de Laboratorio, Capataces y Operarios.
 
-\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: <rellenar los siguientes campos con los datos relativos a la inscripción del fichero en el Registro General de Protección de Datos (RPGD)>
+\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: 
 	\begin{itemize}
-	\item Identificador: <código de inscripción>
-	\item Nombre: <nombre inscrito>
-	\item Descripción: <descripción inscrita>
+	\item Identificador: 555555555
+	\item Nombre: Producción de \laorganizacion
+	\item Descripción: Información sobre la producción de la empresa y sobre las inspecciones de calidad.
 	\end{itemize}
 
 \item Nivel de medidas de seguridad a adoptar: básico.
 
 \item Administrador: Administrador de Red.
 
-\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento <si existen>
+\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento: ley Orgánica 15/1999.
 
-\item Código Tipo Aplicable: <se indicará aquí si el fichero esta incluido en el ámbito de alguno de los códigos tipo regulados por el articulo 32 de la LOPD>.
+\item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
-	\item Finalidad y usos previstos:
-	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales:
-	\item Cesiones previstas:
-	\item Transferencias Internacionales: <relacionar las transferencias internacionales, especificando si ha sido necesaria la autorización del Director de la Agencia Española de Protección de Datos>
-	\item Procedencia de los datos: <indicar quien suministra los datos>
-	\item Procedimiento de recogida: <encuestas, formularios en papel, Internet, ...>
-	\item Soporte utilizado para la recogida de datos: <papel, informático, telemático, ...>
+	\item Finalidad y usos previstos: Gestión de la producción de la empresa y las inspecciones de calidad.
+	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales: Ninguno.
+	\item Cesiones previstas: Ninguna.
+	\item Transferencias Internacionales: No están previstas.
+	\item Procedencia de los datos: Departamentos de Producción.
+	\item Procedimiento de recogida: Informatización de los datos durante la getión de producción.
+	\item Soporte utilizado para la recogida de datos: Informático.
 	\end{itemize}
 
-\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: <indicar la unidad y/o dirección. Deben preverse además, los procedimientos internos para responder a las solicitudes de ejercicio de derechos de los interesados>
+\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador de Red.
 
 \item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
 
-\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación <En el caso de sistemas automatizados. Especificar la periodicidad de las copias (que debe ser al menos semanal). Si se trata de ficheros manuales y tienen prevista alguna medida en este sentido, detallarla>.
+\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
+
+Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
 \item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
 
-\item Funciones del personal con acceso a los datos personales: <Especificar las diferentes funciones y obligaciones de cada una de las personas con acceso a los datos de carácter personal y sistema de información específicos de este fichero>.
+\item Funciones del personal con acceso a los datos personales: Director de Producción, Jefes del Departamento de Producción, Coordinador de Producción, Inspector de Calidad, Técnicos de Laboratorio, Capataces y Operarios.
 
-\item Descripción de los procedimientos de control de acceso e identificación: <Cuando sean específicos para el fichero>.
+\item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
 \item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
 
 <Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
-\item Terceros que acceden a los datos para la prestación de un servicio: <Relacionar las empresas de mantenimiento, de servicios, etc., que tienen acceso a los datos. Cuando sea necesario realizar un contrato escrito según lo dispuesto en el artículo 12 de la LOPD, se incluirá una copia del mismo o de las cláusulas al efecto en el Anexo VI del documento>.
+\item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: <incluyendo fecha, resumen de aspectos modificados y motivo>
+
+\item Relación de actualizaciones de este Anexo: 
+
+	\begin{itemize}
+	\item Creación del anexo: \today
+	\end{itemize}
 
 \end{itemize}
 
@@ -658,55 +759,61 @@ Actualizado a: \today
 \begin{itemize}
 \item Nombre del fichero o tratamiento: Informes.
 
-\item Unidad/es con acceso al fichero o tratamiento: Directores de departamentos y miembros de GI.
+\item Unidad/es con acceso al fichero o tratamiento: Directores de la empresa y miembros de GI.
 
-\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos: <rellenar los siguientes campos con los datos relativos a la inscripción del fichero en el Registro General de Protección de Datos (RPGD)>
+\item Identificador y nombre del fichero en el Registro General de Protección de Datos de la Agencia Española de Protección de Datos:
 	\begin{itemize}
-	\item Identificador: <código de inscripción>
-	\item Nombre: <nombre inscrito>
-	\item Descripción: <descripción inscrita>
+	\item Identificador: 666666666
+	\item Nombre: Iformes de \laorganizacion
+	\item Descripción: Informes de dirección, que se pueden acabar representando como dashboards, etc.
 	\end{itemize}
 
 \item Nivel de medidas de seguridad a adoptar: básico.
 
 \item Administrador: Administrador de Red.
 
-\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento <si existen>
+\item Leyes o regulaciones aplicables que afectan al fichero o tratamiento: ley Orgánica 15/1999.
 
-\item Código Tipo Aplicable: <se indicará aquí si el fichero esta incluido en el ámbito de alguno de los códigos tipo regulados por el articulo 32 de la LOPD>.
+\item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
-	\item Finalidad y usos previstos:
-	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales:
-	\item Cesiones previstas:
-	\item Transferencias Internacionales: <relacionar las transferencias internacionales, especificando si ha sido necesaria la autorización del Director de la Agencia Española de Protección de Datos>
-	\item Procedencia de los datos: <indicar quien suministra los datos>
-	\item Procedimiento de recogida: <encuestas, formularios en papel, Internet, ...>
-	\item Soporte utilizado para la recogida de datos: <papel, informático, telemático, ...>
+	\item Finalidad y usos previstos: Gestión de informes de dirección.
+	\item Personas o colectivos sobre los que se pretenda obtener o que resulten obligados a suministrar los datos personales: Ninguno.
+	\item Cesiones previstas: Ninguna.
+	\item Transferencias Internacionales: No están previstas.
+	\item Procedencia de los datos: Directores de la empresa.
+	\item Procedimiento de recogida: Formularios de informes.
+	\item Soporte utilizado para la recogida de datos: Informático.
 	\end{itemize}
 
-\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: <indicar la unidad y/o dirección. Deben preverse además, los procedimientos internos para responder a las solicitudes de ejercicio de derechos de los interesados>
+\item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador de Red.
 
 \item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
 
-\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación <En el caso de sistemas automatizados. Especificar la periodicidad de las copias (que debe ser al menos semanal). Si se trata de ficheros manuales y tienen prevista alguna medida en este sentido, detallarla>.
+\item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
+
+Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
 \item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
 
-\item Funciones del personal con acceso a los datos personales: <Especificar las diferentes funciones y obligaciones de cada una de las personas con acceso a los datos de carácter personal y sistema de información específicos de este fichero>.
+\item Funciones del personal con acceso a los datos personales: Directores de departamentos y miembros de GI.
 
-\item Descripción de los procedimientos de control de acceso e identificación: <Cuando sean específicos para el fichero>.
+\item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
 \item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
 
 <Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
-\item Terceros que acceden a los datos para la prestación de un servicio: <Relacionar las empresas de mantenimiento, de servicios, etc., que tienen acceso a los datos. Cuando sea necesario realizar un contrato escrito según lo dispuesto en el artículo 12 de la LOPD, se incluirá una copia del mismo o de las cláusulas al efecto en el Anexo VI del documento>.
+\item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: <incluyendo fecha, resumen de aspectos modificados y motivo>
+\item Relación de actualizaciones de este Anexo: 
+
+	\begin{itemize}
+	\item Creación del anexo: \today
+	\end{itemize}
 
 \end{itemize}
 
@@ -817,7 +924,8 @@ incluidos en este documento, como el del responsable de seguridad>
 
 
 
-\chapter{Inventario de soportes ((si se gestiona en papel))}
+\chapter{Inventario de soportes}
+
 
 <Si el inventario de soportes se gestiona de forma no automatizada recoger en este
 anexo la información al efecto, según lo indicado en el Capítulo II, punto “Gestión de
