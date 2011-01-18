@@ -113,9 +113,6 @@ En concreto, los ficheros sujetos a las medidas de seguridad establecidas en est
 En el Anexo A se describen detalladamente cada uno de los ficheros o tratamientos,junto con los aspectos que les afecten de manera particular.
 
 
-
-
-
 \chapter{Medidas, normas, procedimientos, reglas y estándares encaminados a garantizar los niveles de seguridad exigidos en este documento}
 
 \begin{itemize}
@@ -348,7 +345,7 @@ Actualizado a: \today
 \item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: 
-
+El archivo de empleados de la aplicación contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos que se archivan son los siguientes:
 \begin{itemize}
 \item Nombre
 \item Primer apellido
@@ -388,7 +385,7 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
-\item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. Ejecuta la parte servidora de una aplicación de Nóminas y control del personal, con arquitectura cliente-servidor, con los datos residiendo en un sistema gestor de bases de datos Microsoft SQL Server. El acceso de los usuarios a la aplicación está integrado con el acceso a la red informática de la empresa, de forma que el sujeto de seguridad que hace el login coincide con el sujeto de seguridad de la red.
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
@@ -434,19 +431,17 @@ Por otra parte, el software encargado de la realización de las copias verificar
 \end{itemize}
 
 
-\item Información sobre conexión con otros sistemas: Guarda relación con el fichero financiero, el cual contabiliza, entre otras cosas, el pago de nóminas a los trabajadores de la empresa.
+\item Información sobre conexión con otros sistemas: Guarda relación con el fichero financiero, el cual contabiliza, entre otras cosas, el pago de nóminas a los trabajadores de la empresa, aunque no se le transfieren datos de carácter personal.
 
 \item Funciones del personal con acceso a los datos personales: Director de Administración, Jefe de Personal y Administradores de Personal.
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
-
-<Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
+\item Relación actualizada de usuarios con acceso autorizado: Se puede encontrar haciendo Login en la aplicación de nóminas con permisos de administrador. Entrar en el menú "`Gestión de Usuarios"', "`Informes"', "`Lista de Usuarios"'.
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
-\item Relación de actualizaciones de este Anexo: 
+\item Relación de actualizaciones de este Anexo:  
 
 	\begin{itemize}
 	\item Creación del anexo: \today
@@ -485,7 +480,12 @@ Actualizado a: \today
 
 \item Código Tipo Aplicable: No figura.
 
-\item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
+\item Estructura del fichero principal
+El archivo de provedores de la aplicación contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
+
+* Nombre de la persona de contacto.
+* Teléfono de la persona de contacto.
+
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
@@ -500,21 +500,19 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
-\item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. Ejecuta la parte servidora de una aplicación de gestión de Proovedores y Logística, con arquitectura cliente-servidor, con los datos residiendo en un sistema gestor de bases de datos Microsoft SQL Server. El acceso de los usuarios a la aplicación está integrado con el acceso a la red informática de la empresa, de forma que el sujeto de seguridad que hace el login coincide con el sujeto de seguridad de la red..
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
+\item Información sobre conexión con otros sistemas: Se transfieren datos para el pago de facturas al fichero financiero, pero no se trasfiere ninguna información de carácter persona.
 
 \item Funciones del personal con acceso a los datos personales: Director de Administración, Jefe de Logística, Inspector de Mantenimiento y Administradores de Logística.
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
-
-<Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
+\item Relación actualizada de usuarios con acceso autorizado: Se puede encontrar haciendo Login en la aplicación de nóminas con permisos de administrador. Entrar en el menú "`Gestión de Usuarios"', "`Informes"', "`Lista de Usuarios"'.
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
