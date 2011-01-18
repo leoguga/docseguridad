@@ -345,7 +345,7 @@ Actualizado a: \today
 \item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: 
-El archivo de empleados de la aplicación contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos que se archivan son los siguientes:
+El archivo de empleados contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos que se archivan son los siguientes:
 \begin{itemize}
 \item Nombre
 \item Primer apellido
@@ -481,7 +481,7 @@ Actualizado a: \today
 \item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal
-El archivo de provedores de la aplicación contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
+El archivo de provedores contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
 
 * Nombre de la persona de contacto.
 * Teléfono de la persona de contacto.
@@ -500,7 +500,7 @@ El archivo de provedores de la aplicación contiene datos personales que por su 
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
-\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. Ejecuta la parte servidora de una aplicación de gestión de Proovedores y Logística, con arquitectura cliente-servidor, con los datos residiendo en un sistema gestor de bases de datos Microsoft SQL Server. El acceso de los usuarios a la aplicación está integrado con el acceso a la red informática de la empresa, de forma que el sujeto de seguridad que hace el login coincide con el sujeto de seguridad de la red..
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. Ejecuta la parte servidora de una aplicación de gestión de Proovedores y Logística, con arquitectura cliente-servidor, con los datos residiendo en un sistema gestor de bases de datos Microsoft SQL Server. El acceso de los usuarios a la aplicación está integrado con el acceso a la red informática de la empresa, de forma que el sujeto de seguridad que hace el login coincide con el sujeto de seguridad de la red.
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
@@ -569,21 +569,20 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
-\item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
+\item Descripción del sistema de información: 
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
+\item Información sobre conexión con otros sistemas: Se transfiere información de estos archivos al archivo de Informes, en la que pueden incluirse los campos mencionados en esta sección del anexo.
 
 \item Funciones del personal con acceso a los datos personales: Director Comercial, Jefe de Ventas, Jefe de Marketing, Comerciales de Marketing, Jefe de Productos Terminados, Administradores de Venta, Comerciales de Venta y Administradores de Terminados.
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
+\item Relación actualizada de usuarios con acceso autorizado:
 
-<Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
@@ -608,7 +607,7 @@ Las copias de respaldo y procedimientos de recuperación se realizarán de acuer
 Actualizado a: \today
 
 \begin{itemize}
-\item Nombre del fichero o tratamiento: Financias.
+\item Nombre del fichero o tratamiento: Finanzas.
 
 \item Unidad/es con acceso al fichero o tratamiento: Director Financiero, Jefe Contabilidad, Comptroller y Contables.
 
@@ -700,7 +699,15 @@ Actualizado a: \today
 
 \item Código Tipo Aplicable: No figura.
 
-\item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
+\item Estructura del fichero principal: 
+El archivo de producción contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
+
+* Nombre del Trabajador
+* Identificador del Trabajador.
+* Nombre del Inspector.
+* Identificador del Inspector.
+* Nombre del Técnico.
+* Identificador del Técnico.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
@@ -715,21 +722,19 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador de Red.
 
-\item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. El archivo consiste en un árbol de directorios compartidos, dividido en dos áreas: área de producción, y área de laboratorio. Dentro de estas áreas, los usuarios crean estadillos con formato MS Word y MS Excel, basados en plantillas que se les han suministrado.
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
+\item Información sobre conexión con otros sistemas: Se transfiere información agregada al fichero de Informes de Dirección, pero la informació transferida no incluye datos personales.
 
 \item Funciones del personal con acceso a los datos personales: Director de Producción, Jefes del Departamento de Producción, Coordinador de Producción, Inspector de Calidad, Técnicos de Laboratorio, Capataces y Operarios.
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
-
-<Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
+\item Relación actualizada de usuarios con acceso autorizado:  La relación actualizada de acceso autorizado se puede encontrar utilizando la opción "`Propiedades"', y la pestaña "`Seguridad"' en los directorios correspondientes a través del interfaz de usuario del Explordador de Windows.
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
@@ -789,21 +794,19 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador de Red.
 
-\item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. El archivo consiste en un árbol de directorios compartidos, dividido en dos áreas: Dirección General y Comité Ejecutivo. Dentro de estas áreas, los empleados de GI creanformes de dirección en formatos MS Word, MS Excel, y MS Powerpoint, con información agregada sobre el estado de la compañía.
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
+\item Información sobre conexión con otros sistemas: La información contenida está basada en cálculos y transferencias de datos del resto de los ficheros. En ningún caso se transfieren datos personales.
 
 \item Funciones del personal con acceso a los datos personales: Directores de departamentos y miembros de GI.
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
-
-<Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
+\item Relación actualizada de usuarios con acceso autorizado: La relación actualizada de acceso autorizado se puede encontrar utilizando la opción "`Propiedades"', y la pestaña "`Seguridad"' en los directorios correspondientes a través del interfaz de usuario del Explordador de Windows.
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
@@ -814,14 +817,6 @@ Las copias de respaldo y procedimientos de recuperación se realizarán de acuer
 	\end{itemize}
 
 \end{itemize}
-
-
-
-
-
-
-
-
 
 
 \chapter{Nombramientos}
