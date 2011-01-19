@@ -18,6 +18,7 @@
 \usepackage{xspace}
 \usepackage{varioref}
 \usepackage{microtype}
+\usepackage[table]{xcolor}
 \usepackage{supertabular}
 
 % hyperref casi siempre es mejor cargarlo al final
@@ -60,7 +61,6 @@ El presente Documento y sus Anexos, redactados en cumplimiento de lo dispuesto e
 
 
 \tableofcontents
-\listoffigures
 \listoftables
 
 \chapter{Historial de cambios}
@@ -268,7 +268,7 @@ Además, debe asegurar el buen funcionamiento de copias, almacenado y transporte
 
 \chapter{Procedimiento de notificación, gestión y respuestas ante las incidencias}
 
-Se considerarán como "incidencias de seguridad", entre otras, cualquier incumplimiento de la normativa desarrollada en este Documento de Seguridad, así como a cualquier anomalía que afecte o pueda afectar a la seguridad de los datos de carácter personal.
+Se considerarán como "`incidencias de seguridad"', entre otras, cualquier incumplimiento de la normativa desarrollada en este Documento de Seguridad, así como a cualquier anomalía que afecte o pueda afectar a la seguridad de los datos de carácter personal.
 
 El procedimiento a seguir para la notificación de incidencias será:
 
@@ -316,6 +316,8 @@ El incumplimiento de las obligaciones y medidas de seguridad establecidas en el 
 
 
 
+
+
 \appendix
 \chapter{Aspectos específicos relativos a los diferentes ficheros}
 
@@ -345,7 +347,8 @@ Actualizado a: \today
 \item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: 
-El archivo de empleados contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos que se archivan son los siguientes:
+
+El archivo de empleados contiene datos personales que, por su naturaleza, sólo requieren nivel básico de protección. Los campos que se archivan son los siguientes:
 \begin{itemize}
 \item Nombre
 \item Primer apellido
@@ -368,6 +371,7 @@ El archivo de empleados contiene datos personales que por su naturaleza, sólo r
 \item Teléfono 2
 \item Tipo de contrato
 \item Salario
+\item Cuanta Corriente
 \item Curriculum
 \end{itemize}
 
@@ -481,10 +485,14 @@ Actualizado a: \today
 \item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal
-El archivo de provedores contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
 
-* Nombre de la persona de contacto.
-* Teléfono de la persona de contacto.
+El archivo de provedores contiene datos personales que, por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
+
+\begin{itemize}
+\item Empresa
+\item Nombre y apellidos de la persona de contacto
+\item Teléfono de la persona de contacto
+\end{itemize}
 
 
 \item Información sobre el fichero o tratamiento
@@ -506,7 +514,7 @@ El archivo de provedores contiene datos personales que por su naturaleza, sólo 
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: Se transfieren datos para el pago de facturas al fichero financiero, pero no se trasfiere ninguna información de carácter persona.
+\item Información sobre conexión con otros sistemas: Se transfieren datos para el pago de facturas al fichero financiero, pero no se trasfiere ninguna información de carácter personal.
 
 \item Funciones del personal con acceso a los datos personales: Director de Administración, Jefe de Logística, Inspector de Mantenimiento y Administradores de Logística.
 
@@ -554,7 +562,20 @@ Actualizado a: \today
 
 \item Código Tipo Aplicable: No figura.
 
-\item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
+\item Estructura del fichero principal: 
+
+El archivo de clientes contiene datos personales que, por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
+\begin{itemize}
+\item Nombre
+\item Primer apellido
+\item Segundo apellido
+\item Dirección (opcional)
+\item Ciudad (opcional)
+\item Código Postal (opcional)
+\item Correo electrónico (opcional)
+\item Teléfono (opcional)
+\end{itemize}
+
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
@@ -569,7 +590,7 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
-\item Descripción del sistema de información: 
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. Ejecuta la parte servidora de una aplicación de gestión de Proovedores y Logística, con arquitectura cliente-servidor, con los datos residiendo en un sistema gestor de bases de datos Microsoft SQL Server. El acceso de los usuarios a la aplicación está integrado con el acceso a la red informática de la empresa, de forma que el sujeto de seguridad que hace el login coincide con el sujeto de seguridad de la red.
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
@@ -581,7 +602,7 @@ Las copias de respaldo y procedimientos de recuperación se realizarán de acuer
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado:
+\item Relación actualizada de usuarios con acceso autorizado: Se puede encontrar haciendo Login en la aplicación de nóminas con permisos de administrador. Entrar en el menú "`Gestión de Usuarios"', "`Informes"', "`Lista de Usuarios"'.
 
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
@@ -626,7 +647,7 @@ Actualizado a: \today
 
 \item Código Tipo Aplicable: No figura.
 
-\item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
+\item Estructura del fichero principal: El archivo financiero no contiene datos directos de carácter personal.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
@@ -641,21 +662,19 @@ Actualizado a: \today
 
 \item Servicio o Unidad ante el que puedan ejercitarse los derechos de acceso, rectificación, cancelación y oposición: Administrador del Sistema.
 
-\item Descripción del sistema de información: <Describir los sistemas de información automatizados o no en los que se realiza el tratamiento de los datos. En el caso de ficheros automatizados, incluir los equipos físicos>.
+\item Descripción del sistema de información: El archivo reside en un servidor de aplicaciones en el el centro de cálculo. Se trata de un servidor Dell Power Edge R515, que ejecuta un sistema operativo Windows Server 2008 R2. Ejecuta la parte servidora de una aplicación de gestión de Proovedores y Logística, con arquitectura cliente-servidor, con los datos residiendo en un sistema gestor de bases de datos Microsoft SQL Server. El acceso de los usuarios a la aplicación está integrado con el acceso a la red informática de la empresa, de forma que el sujeto de seguridad que hace el login coincide con el sujeto de seguridad de la red.
 
 \item Descripción detallada de las copias de respaldo y de los procedimientos de recuperación:
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: <Describir las posibles relaciones con otros ficheros del mismo responsable>.
+\item Información sobre conexión con otros sistemas: Guarda relación con el fichero de personal, de proveedores, de clientes y de producción, ya que contabiliza pagos de salarios a empleados y pagos a proveedores, cobros de clientes, gastos de producción, etc.
 
 \item Funciones del personal con acceso a los datos personales: Director Financiero, Jefe Contabilidad, Comptroller y Contables.
 
 \item Descripción de los procedimientos de control de acceso e identificación: Cada usuario con autorización de acceso al fichero deberá identificarse en el sistema con el nombre de usuario y contraseña asignados como se ha mencionado en el capítulo 2 de este mismo documento.
 
-\item Relación actualizada de usuarios con acceso autorizado: <Relacionar todos los usuarios que acceden al fichero, con especificación del tipo o grupo de usuarios al que pertenecen, su clave de identificación, nombre y apellidos, unidad, fecha de alta y fecha de baja>.
-
-<Si la relación se mantiene de forma informatizada, indicar aquí cual es el sistema utilizado y la forma de obtener el listado. No obstante, siempre que sea posible, es conveniente imprimir la relación de usuarios y adjuntarla periódicamente a este Anexo>.
+\item Relación actualizada de usuarios con acceso autorizado: Se puede encontrar haciendo Login en la aplicación de nóminas con permisos de administrador. Entrar en el menú "`Gestión de Usuarios"', "`Informes"', "`Lista de Usuarios"'.
 
 \item Terceros que acceden a los datos para la prestación de un servicio: Ninguno.
 
@@ -700,14 +719,17 @@ Actualizado a: \today
 \item Código Tipo Aplicable: No figura.
 
 \item Estructura del fichero principal: 
+
 El archivo de producción contiene datos personales que por su naturaleza, sólo requieren nivel básico de protección. Los campos con datos personales que se archivan son los siguientes:
 
-* Nombre del Trabajador
-* Identificador del Trabajador.
-* Nombre del Inspector.
-* Identificador del Inspector.
-* Nombre del Técnico.
-* Identificador del Técnico.
+\begin{itemize}
+\item Nombre del Trabajador
+\item Identificador del Trabajador
+\item Nombre del Inspector
+\item Identificador del Inspector
+\item Nombre del Técnico
+\item Identificador del Técnico
+\end{itemize}
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
@@ -728,7 +750,7 @@ El archivo de producción contiene datos personales que por su naturaleza, sólo
 
 Las copias de respaldo y procedimientos de recuperación se realizarán de acuerdo al capítulo 7 del documento \emph{Política de Seguridad de Tecnologías de la Información de Bodegas San Dionisio, S.A}, más concretamente de las secciones 7.2.1 (\emph{Tipos de copias y frecuencia}) y 7.3 (\emph{Recuperación de activos}) respectivamente. Ambas secciones citadas en este mismo punto de la sección A.1 del presente apéndice.
 
-\item Información sobre conexión con otros sistemas: Se transfiere información agregada al fichero de Informes de Dirección, pero la informació transferida no incluye datos personales.
+\item Información sobre conexión con otros sistemas: Se transfiere información agregada al fichero de Informes de Dirección, pero la información transferida no incluye datos personales.
 
 \item Funciones del personal con acceso a los datos personales: Director de Producción, Jefes del Departamento de Producción, Coordinador de Producción, Inspector de Calidad, Técnicos de Laboratorio, Capataces y Operarios.
 
@@ -779,7 +801,7 @@ Actualizado a: \today
 
 \item Código Tipo Aplicable: No figura.
 
-\item Estructura del fichero principal: <Incluir los tipos de datos personales incluidos, con especificación de los que, por su naturaleza, afectan a la diferente calificación del nivel de medidas de seguridad a adoptar, según lo indicado en el artículo 4 del Reglamento de Seguridad>.
+\item Estructura del fichero principal: No aparecen datos de caracter personal.
 
 \item Información sobre el fichero o tratamiento
 	\begin{itemize}
@@ -819,10 +841,8 @@ Las copias de respaldo y procedimientos de recuperación se realizarán de acuer
 \end{itemize}
 
 
-\chapter{Nombramientos}
 
-<Adjuntar original o copia de los nombramientos que afecten a los diferentes perfiles
-incluidos en este documento, como el del responsable de seguridad>
+
 
 
 
@@ -848,7 +868,7 @@ incluidos en este documento, como el del responsable de seguridad>
 \begin{center}
 \begin{supertabular}{|p{3cm}|p{11cm}|}
 	\hline
-	\multicolumn {2}{|c|}{\textbf{SOPORTE}}\\
+	\multicolumn{2}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\textbf{SOPORTE}}\\
 	\hline
 	Identificación &  \\
 	\hline
@@ -865,7 +885,7 @@ incluidos en este documento, como el del responsable de seguridad>
 \begin{center}
 \begin{supertabular}{|p{3cm}|p{11cm}|}
 	\hline
-	\multicolumn {2}{|c|}{\textbf{FINALIDAD Y DESTINO}}\\
+	\multicolumn{2}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\textbf{FINALIDAD Y DESTINO}}\\
 	\hline
 	Finalidad &  \\
 	\hline
@@ -881,7 +901,7 @@ incluidos en este documento, como el del responsable de seguridad>
 \begin{center}
 \begin{supertabular}{|p{3cm}|p{11cm}|}
 	\hline
-	\multicolumn {2}{|c|}{\textbf{FORMA DE ENVÍO}}\\
+	\multicolumn{2}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\textbf{FORMA DE ENVÍO}}\\
 	\hline
 	Medio de envío &  \\
 	\hline
@@ -898,7 +918,7 @@ incluidos en este documento, como el del responsable de seguridad>
 \begin{center}
 \begin{supertabular}{|p{3cm}|p{11cm}|}
 	\hline
-	\multicolumn {2}{|c|}{\textbf{AUTORIZACIÓN}}\\
+	\multicolumn{2}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\textbf{AUTORIZACIÓN}}\\
 	\hline
 	Persona que autoriza &  \\
 	\hline
@@ -919,13 +939,65 @@ incluidos en este documento, como el del responsable de seguridad>
 
 \chapter{Inventario de soportes}
 
+\hfill Página nº \_\_\_\_\_
 
-<Si el inventario de soportes se gestiona de forma no automatizada recoger en este
-anexo la información al efecto, según lo indicado en el Capítulo II, punto “Gestión de
-soportes” de este documento. Los soportes deberán permitir identificar el tipo de
-información, que contienen, ser inventariados y almacenarse en un lugar con acceso
-restringido al personal autorizado para ello en este documento >
-
+\vspace{-0.6cm}
+\bottomcaption{Inventario de soportes}
+\begin{center}
+\begin{supertabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+	\hline 
+	\multicolumn{7}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\textbf{INVENTARIO DE SOPORTES}}\\
+	\hline
+	& \multicolumn {3}{|c|}{\textbf{ALTAS}} & \multicolumn {3}{|c|}{\textbf{BAJAS}} \\
+	\cline{2-7}
+	\multicolumn {1}{|c|}{Soporte} & & \multicolumn {1}{|c|}{Fecha} & \multicolumn {3}{|c|}{Motivo} & \\
+	\cline{4-6}
+	& \multicolumn {1}{|c|}{Nº de orden} & \multicolumn {1}{|c|}{de copia} & \multicolumn {1}{|c|}{\small Reutilización} & \multicolumn {1}{|c|}{\small Destrucción} & \multicolumn {1}{|c|}{\small Otros} & \multicolumn {1}{|c|}{Fecha} \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+	 & & & & & & \\
+	\hline
+\end{supertabular}
+\end{center}
 
 
 
